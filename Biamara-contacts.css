@@ -1,0 +1,1522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+     *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
+     }
+     body{
+      background-image: url('/Images/compu2.jpg');
+     }
+     
+     .navbar{
+      background-color: rgb(146, 36, 9);
+      width: 100%;
+      height: 75px;
+      line-height: 75px;
+      padding: 0px 40px;
+     }
+
+     .navbar .Bia{
+      float: left;
+      
+    }
+    
+    .im1{
+      width: 140px;
+      margin-block-start: 1.3rem;
+    }
+    .in-logo{
+      display: none;
+    }
+    .in-social{
+      display: none;
+    }
+    .in-hr{
+      display: none;
+    }
+
+    .navbar .navul{
+      float: right;
+    }
+
+    .navbar .navul .navli{
+      list-style: none;
+      display: inline-block;
+    }
+
+    .navbar .navul .navli a{
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0px 20px;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+    }
+
+/*customizing the submenu*/
+
+     .submenu1a{
+      display: none;
+     }
+    .navbar .navul .navli:hover .submenu1a{
+      display: block;
+      position: absolute;
+      background-color: rgb(146, 36, 9);
+      margin-top: -1px;
+      width: 100%;
+     }
+     .navbar ul li:hover .submenu1a ul{
+      display: block;
+     }
+     .navbar .navul .navli:hover .submenu1a ul li{
+      width: fit-content;
+      padding: 0px;
+      background: transparent;
+      text-align: left;
+      list-style: none;
+     }
+  
+     .navbar .navul .navli:hover .submenu1a ul li a:hover{
+      color: black;
+     }
+
+     .navbar .menuiconfont{
+      margin-right: 10px;
+     }
+    
+     .fa-angle-right{
+      padding-left: 30px;
+     }
+     .submenu1b{
+      display: none;
+     }
+     .hover-me:hover .submenu1b{
+      display: block;
+      position: absolute;
+      background-color: rgb(146, 36, 9);
+      margin-top: -45px;
+      margin-left: 110px;
+     }
+     .navbar .navul .navli:hover .submenu2b, .submenu1b ul li a{
+      font-size: 1vw;
+      font-style: italic;
+     }
+     .navbar .navul .navli:hover .submenu1b, .submenu2b ul li{
+      border-bottom: none;
+     }
+     .navbar ul li:hover .submenu2b ul{
+      width: fit-content;
+     }
+
+
+     .register{
+      padding: 3px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 3px;
+      padding-left: 5px;
+      padding-right: 5px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+     }
+     .signin{
+       color: rgb(0, 0, 0);
+      border: none;
+      padding: 3px;
+      margin-left: 5px;
+      border-radius: 3px;
+      padding-left: 5px;
+      padding-right: 5px;
+      }
+      .register:hover{
+       background-color: rgb(250, 116, 6);
+      }
+      .signin:hover{
+       background-color: rgb(250, 116, 6);
+       color: white;
+      }
+    
+
+    #check{
+      display: none;
+    }
+
+    .checkbtn{
+      font-size: 24px;
+      color: white;
+      float: right;
+      display: none;
+    }
+    
+    .navul .navli a:hover{
+      color: rgb(250, 116, 6);
+      
+      
+    }
+    .navul .navli a.active{
+      color: rgb(250, 116, 6);
+      
+    }
+
+
+
+    /*This our contact form*/
+
+    .section-container{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(34, 34, 27);
+    }
+
+    .contact-details-wrapper {
+      display: inline-block;
+      background-color: rgb(139, 184, 139);
+      margin: 20px;
+      width: auto;
+      padding: 15px;
+      text-align: center;
+      height: auto;
+      border-bottom-right-radius: 80px;
+      border-top-left-radius: 80px;
+    }
+    .contact-details-wrapper h1{
+      font-weight: bold;
+      margin-bottom: 40px;
+      border-bottom: groove;
+     }
+     .contact-details-wrapper ul{
+      display: block;
+     }
+     .contact-details-wrapper ul li{
+      list-style: none;
+      padding: 10px;
+     }
+     .contact-details-wrapper ul li a{
+      text-decoration: none;
+      color: rgb(9, 7, 165);
+      font-size: 18px;
+     }
+     .contact-details-wrapper ul li a:hover{
+      color: #fff;
+     }
+     .contact-details-wrapper span{
+      font-size: 20px;
+     }
+     .contact-details-wrapper .contact-icon{
+      font-size: 20px;
+      margin-right: 8px;
+     }
+     .contact-details-wrapper h2{
+      font-size: 20px;
+      margin-top: 30px;
+     }
+     .contact-details-wrapper address{
+      display: inline-block;
+      margin: 20px;
+      font-weight: bold;
+     }
+
+
+
+
+    .contact-form-wrapper {
+      display: inline-block;
+      background-color: rgb(146, 36, 9);
+      margin: 20px;
+      width: auto;
+      padding: 15px;
+      text-align: center;
+      height: auto;
+      border-bottom-right-radius: 80px;
+      border-top-left-radius: 80px;
+    }
+    .contact-form-wrapper form{
+     margin: 20px;
+    }
+    .contact-form-wrapper form label{
+      font-size: 20px;
+      font-family: 'poppins', sans-serif;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .contact-form-wrapper form input{
+     display: inline-block;
+     width: 278px;
+     border: none;
+     padding: 20px;
+     margin: 20px;
+     margin-left: auto;
+     margin-right: auto;
+    }
+    .contact-form-wrapper form .label-for-input{
+     padding-right: 10px;
+     }
+    .contact-form-wrapper form textarea{
+      display: block;
+      width: 348px;
+      height: 150px;
+      border: none;
+      padding: 10px;
+      margin: 10px;
+      margin-left: auto;
+      margin-right: auto;
+     }
+    .contact-form-wrapper form button{
+      display: block;
+      width: 25.5vw;
+      height: 40px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-right: auto;
+      margin-left: auto;
+      border: none;
+      background-color: black;
+      color: white;
+      border-radius: 6px;
+      font-size: 20px;
+     }
+     .contact-form-wrapper form button:hover{
+      background-color: rgb(218, 98, 0);;
+     }
+     .contact-form-wrapper form input{
+      height: 30px;
+
+     }
+     .contact-form-wrapper h1{
+      font-weight: bold;
+      margin-bottom: 40px;
+      border-bottom: groove;
+     }
+  
+
+
+
+
+
+
+
+    /*This is the footer section*/
+
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  background-color: rgb(34, 34, 27);
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+ .jobmktdiv, .coursesdiv, .marketingdiv {
+  display: inline-block;
+  width: 40%;
+}
+.marketingdiv{
+  padding-right: 3em;
+}
+
+.aboutusdiv {
+  padding-left: 3em;
+  width: 53%;
+  padding-inline-end: 4em;
+}
+
+.aboutusp{
+ width: 100%;
+ display: inline-block;
+ margin-right: 0;
+}
+
+.footlist {
+ list-style: none;
+ 
+}
+
+.joblinks, .courseslinks, .marketinglinks, .aboutusp{
+ color: rgb(148, 148, 148);
+ font-size: 16px;
+ font-family: arial;
+}
+
+.aboutusp{
+ line-height: 25px;
+}
+
+.joblinks, .courseslinks, .marketinglinks {
+  text-decoration: none;
+  transition: 0.5s;
+  line-height: 33px;
+}
+
+.aboutush1, .jobmkth1,.coursesh1, .marketingh1 {
+  padding-block-end: 1rem;
+  color: white;
+  font-size: 2.5vw;
+}
+
+.joblinks:hover, .courseslinks:hover, .marketinglinks:hover{
+ color: rgb(172, 107, 10);
+ padding-left: 15px;
+ transition: 0.2s;
+}
+
+
+/*social media footer*/
+
+
+.contactsdiv {
+  width: 100%;
+  background-color: rgb(34, 34, 27);
+  text-align: center;
+}
+
+.contacts-list {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  font-family: arial;
+  line-height: 60px;
+  margin-top: 0px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 38px;
+  
+}
+
+.contactsh1 {
+  color: white;
+  display: block;
+  font-size: 1.5vw;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: arial;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.facebooklinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+  margin-left: auto;
+  
+}
+.facebooklinks:hover {
+ color: rgb(26, 82, 235);
+}
+
+.instalinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+}
+.instalinks:hover {
+  color: rgb(173, 10, 173);
+}
+
+.twitterlinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+}
+.twitterlinks:hover {
+  color: rgb(32, 147, 255);
+}
+
+.youtubelinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+}
+.youtubelinks:hover {
+  color: rgb(255, 0, 0);
+}
+
+.whatslinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+}
+.whatslinks:hover {
+  color: rgb(18, 155, 18);
+}
+
+.emaillinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+}
+.emaillinks:hover {
+  color: rgb(228, 61, 10);
+}
+
+.linkelinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+}
+.linkelinks:hover {
+  color: rgb(23, 23, 231);
+}
+
+.tumblinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+}
+.tumblinks:hover {
+  color: purple;
+}
+
+.telelinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+}
+.telelinks:hover {
+  color: rgb(26, 158, 235); 
+}
+
+.pintlinks {
+  text-decoration: none;
+  color: white;
+  margin-right: auto;
+}
+.pintlinks:hover {
+  color: rgb(255, 0, 0);
+ 
+}
+
+
+
+hr {
+  margin-bottom: 0px;
+  margin-block-start: 0;
+  
+}
+
+
+/*footer 2*/
+
+.footer-div {
+  background-color:rgb(58, 15, 37);
+  margin-top: 0px;
+  margin-bottom: -1%;
+  width: 100%;
+}
+
+.footer-logo {
+  width: 200px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.footer-alrights {
+  display: inline-block;
+  margin-top: 25px;
+  vertical-align: top;
+  font-size: 18px;
+  color: rgb(126, 125, 123);
+}
+
+.ulfooter {
+  display: inline-block;
+  margin-top: 16px;
+  padding-top: 10px;
+  padding-left: 30px;
+  vertical-align: top;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: rgb(126, 125, 123);
+  padding: 10px;
+  display: inline-block;
+  margin-top: 0;
+  margin-inline-start: 10px;
+  padding-top: 0;
+  font-size: 14px;
+}
+
+.footer-links:hover{
+  color: rgb(199, 123, 23);
+  transition: 0.1s;
+}
+
+.contacts-list:hover{
+  box-shadow: 5px 5px 10px rgb(199, 123, 23);
+  transition: 0.1s;
+}
+.footer-links:hover {
+  color: rgb(199, 123, 23);
+  transition: 0.1s;
+}
+
+
+
+
+/*responsive for navition bar*/
+
+@media screen and (max-width: 789px){
+  .navbar{
+  padding: 0px;
+}
+.Bia{
+  padding-inline-start: 40px;
+}
+.navul {
+  background-color: rgb(146, 36, 9);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: -100%;
+  transition: 0.6s ease;
+  overflow: auto;
+}
+.navbar .navul .navli{
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  font-style: italic;
+}
+.navli {
+ line-height: 50px; 
+}
+.checkbtn{
+  display: block;
+  padding-inline-end: 1.5em;
+}
+#check:checked ~ .navul{
+  left: 0;
+}
+.quote{
+  display: none;
+ }
+.in-logo{
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 15px;
+ }
+.im2{
+ width: 100px;
+ margin-bottom: 4vw;
+}
+.in-social{
+  display: inline-block;
+  padding-left: auto;
+  padding-right: auto;
+  font-size: 8vw;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 5px;
+}  
+.in-p{
+  font-size: 3vw;
+  width: 100%;
+  display: block;
+  cursor: initial;
+  padding-bottom: 3vw;
+}
+
+form.in-search input[type=text]{
+  padding: 1.2vw;
+  font-size: 3vw;
+  border: 1px solid rgb(250, 116, 6);
+  
+  width: 60%;
+  background: #f1f1f1;
+  
+}
+form.in-search .in-search-btn {
+  width: 10%;
+  padding: 1.2vw;
+  border: 1px solid rgb(250, 116, 6);
+  font-size: 3vw;
+  border-left: none;
+  background: rgb(250, 116, 6);
+  color: white;
+  cursor: pointer;
+  
+}
+
+.in-hr{
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 2vw;
+  width: 100%;
+}
+
+.navbar .navul .navli:hover .submenu1a{
+  display: block;
+  position: relative;
+  background-color: rgb(146, 36, 9);
+  margin-top: -1px;
+  width: 50%;
+  
+ }
+ .navbar ul li:hover .submenu1a ul{
+  display: block;
+ }
+ .navbar ul li:hover .submenu1a ul li a{
+  font-size: 13px;
+ }
+
+
+ .navbar .navul .navli:hover .submenu1a ul li{
+  width: fit-content;
+  padding: 0px;
+  background: transparent;
+  text-align: left;
+  list-style: none;
+ }
+ .hover-me:hover .submenu1b{
+  display: block;
+  position: relative;
+  background-color: rgb(146, 36, 9);
+  margin-top: -45px;
+  margin-left: 110px;
+ }
+ .navbar .navul .navli:hover .submenu2b, .submenu1b ul li a{
+  font-size: 13px;
+  font-style: italic;
+ }
+ .navbar .navul .navli:hover .submenu1a ul li a{
+  color: rgb(250, 116, 6);
+ }
+ 
+ .hover-me:hover .submenu1b, .submenu2b ul {
+  width: 100%;
+ }
+.fa-angle-right{
+  padding-left: 6px;
+ }
+
+}
+
+
+@media screen and (min-width: 790px) and (max-width: 1024px){
+  .navbar{
+  padding: 0px 40px;
+}
+.navbar .navul .navli a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0px 10px;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  font-size: 14px;
+}
+.navul .navli a:hover{
+  color: rgb(250, 116, 6);
+}
+.navul .navli a.active{
+  color: rgb(250, 116, 6);
+}
+.im1{
+  width: 120px;
+  margin-block-start: 1.5rem;
+}
+.quote{
+  display: inline-block;
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  margin-left: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  
+ }
+}
+
+@media screen and (min-width: 790px) and (max-width: 1139px){
+.navbar .menuiconfont{
+  display: none;
+ }
+ .navbar .navul .navli:hover .submenu1a{
+  display: block;
+  position: absolute;
+  background-color: rgb(146, 36, 9);
+  margin-top: -3px;
+  width: 100%;
+ }
+}
+
+/*responsive for footer*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.footer-container {
+  display: block;
+  width: 100%;
+  background-color: rgb(34, 34, 27);
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+ 
+}
+.aboutusdiv {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.jobmktdiv{
+  display: inline-block;
+  width: 40%;
+  
+}
+.coursesdiv, .marketingdiv{
+  display: inline-block;
+  width: 40%;
+  padding-block-start: 1.5em;
+}
+.marketingdiv{
+  padding-right: 0;
+}
+
+.contactsdiv {
+  width: 100%;
+  background-color: rgb(34, 34, 27);
+  text-align: center;
+}
+
+.contacts-list {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  font-family: arial;
+  line-height: 60px;
+  margin-top: 0px;
+  text-align: center;
+  padding:20px;
+  cursor: pointer;
+  font-size: 24px;
+  
+}
+
+.contactsh1 {
+  color: white;
+  display: block;
+  font-size: 1.5vw;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: arial;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.facebooklinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+  margin-left: auto;
+  
+}
+.facebooklinks:hover {
+ color: rgb(26, 82, 235);
+}
+
+.instalinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.instalinks:hover {
+  color: rgb(173, 10, 173);
+}
+
+.twitterlinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.twitterlinks:hover {
+  color: rgb(32, 147, 255);
+}
+
+.youtubelinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.youtubelinks:hover {
+  color: rgb(255, 0, 0);
+}
+
+.whatslinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.whatslinks:hover {
+  color: rgb(18, 155, 18);
+}
+
+.emaillinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.emaillinks:hover {
+  color: rgb(228, 61, 10);
+}
+
+.linkelinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.linkelinks:hover {
+  color: rgb(23, 23, 231);
+}
+
+.tumblinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.tumblinks:hover {
+  color: purple;
+}
+
+.telelinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.telelinks:hover {
+  color: rgb(26, 158, 235); 
+}
+
+.pintlinks {
+  text-decoration: none;
+  color: white;
+  margin-right: auto;
+}
+.pintlinks:hover {
+  color: rgb(255, 0, 0);
+}
+
+.footer-div {
+  background-color:rgb(58, 15, 37);
+  margin-top: 0px;
+  margin-bottom: -1%;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 200px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.footer-alrights {
+  display: inline-block;
+  margin-top: 25px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.ulfooter {
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 2px;
+  padding-left: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: rgb(126, 125, 123);
+  padding: 7px;
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1323px){
+.footer-div {
+  background-color:rgb(58, 15, 37);
+  margin-top: 0px;
+  margin-bottom: -1%;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 200px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.footer-alrights {
+  display: inline-block;
+  margin-top: 25px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.ulfooter {
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 2px;
+  padding-left: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: rgb(126, 125, 123);
+  padding: 7px;
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 18px;
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+.footer-container {
+  display: block;
+  width: 100%;
+  background-color: rgb(34, 34, 27);
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+ 
+}
+.aboutusdiv {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.jobmktdiv{
+  display: inline-block;
+  width: 40%;
+  
+}
+.coursesdiv, .marketingdiv{
+  display: inline-block;
+  width: 40%;
+  padding-block-start: 1.5em;
+}
+.marketingdiv{
+  padding-right: 0;
+}
+
+.contactsdiv {
+  width: 100%;
+  background-color: rgb(34, 34, 27);
+  text-align: center;
+}
+
+.contacts-list {
+  color: white;
+  display: inline-block;
+  width: 75%;
+  font-family: arial;
+  line-height: 60px;
+  margin-top: 0px;
+  text-align: center;
+  padding:20px;
+  cursor: pointer;
+  font-size: 24px;
+  
+}
+
+.contactsh1 {
+  color: white;
+  display: block;
+  font-size: 1.5vw;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: arial;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.facebooklinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+  margin-left: auto;
+  
+}
+.facebooklinks:hover {
+ color: rgb(26, 82, 235);
+}
+
+.instalinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.instalinks:hover {
+  color: rgb(173, 10, 173);
+}
+
+.twitterlinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.twitterlinks:hover {
+  color: rgb(32, 147, 255);
+}
+
+.youtubelinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.youtubelinks:hover {
+  color: rgb(255, 0, 0);
+}
+
+.whatslinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.whatslinks:hover {
+  color: rgb(18, 155, 18);
+}
+
+.emaillinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.emaillinks:hover {
+  color: rgb(228, 61, 10);
+}
+
+.linkelinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.linkelinks:hover {
+  color: rgb(23, 23, 231);
+}
+
+.tumblinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.tumblinks:hover {
+  color: purple;
+}
+
+.telelinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+.telelinks:hover {
+  color: rgb(26, 158, 235); 
+}
+
+.pintlinks {
+  text-decoration: none;
+  color: white;
+  margin-right: auto;
+}
+.pintlinks:hover {
+  color: rgb(255, 0, 0);
+}
+
+.footer-div {
+  background-color:rgb(58, 15, 37);
+  margin-top: 0px;
+  margin-bottom: -1%;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 200px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.footer-alrights {
+  display: inline-block;
+  margin-top: 25px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.ulfooter {
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 2px;
+  padding-left: 0;
+  vertical-align: top;
+  width: 70%;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: rgb(126, 125, 123);
+  padding: 7px;
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (max-width: 599px) {
+.footer-container {
+  display: block;
+  width: 100%;
+  background-color: rgb(34, 34, 27);
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+ .jobmktdiv, .coursesdiv, .marketingdiv {
+  display: inline-block;
+  width: 100%;
+}
+.marketingdiv{
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-top: 30px;
+}
+
+.aboutusdiv {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.coursesdiv {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.aboutusp{
+ width: 100%;
+ display: inline-block;
+ margin-right: 0;
+}
+
+.footlist {
+ list-style: none;
+ 
+}
+
+.joblinks, .courseslinks, .marketinglinks, .aboutusp{
+ color: rgb(148, 148, 148);
+ font-size: 16px;
+ font-family: arial;
+}
+
+.aboutusp{
+ line-height: 25px;
+}
+
+.joblinks, .courseslinks, .marketinglinks {
+  text-decoration: none;
+  transition: 0.5s;
+  line-height: 33px;
+}
+
+.aboutush1, .jobmkth1,.coursesh1, .marketingh1 {
+  padding-block-end: 1rem;
+  color: white;
+  font-size: 20px;
+}
+
+.joblinks:hover, .courseslinks:hover, .marketinglinks:hover{
+ color: rgb(172, 107, 10);
+ padding-left: 15px;
+ transition: 0.2s;
+}
+
+.contactsdiv {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  display: none;
+}
+
+
+.footer-div {
+  background-color:rgb(58, 15, 37);
+  margin-top: 0px;
+  margin-bottom: -1%;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 150px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.footer-alrights {
+  display: inline-block;
+  margin-top: 25px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.ulfooter {
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 2px;
+  padding-left: 0;
+  vertical-align: top;
+  width: 70%;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: rgb(126, 125, 123);
+  padding: 7px;
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+/*Responsive for contact form*/
+
+@media screen and (max-width: 502px) {
+  
+  .contact-form-wrapper {
+    display: inline-block;
+    background-color: rgb(146, 36, 9);
+    margin: 20px;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+    height: auto;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+  }
+  
+  .contact-form-wrapper form label{
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .contact-form-wrapper form input{
+   display: block;
+   width: 278px;
+   border: none;
+   padding: 20px;
+   margin: 5px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .contact-form-wrapper form textarea{
+    display: block;
+    width: 278px;
+    height: 150px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+  .contact-form-wrapper form button{
+    display: block;
+    width: 125px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+   }
+   .contact-form-wrapper form button:hover{
+    background-color: rgb(218, 98, 0);;
+   }
+   .contact-form-wrapper form input{
+    height: 30px;
+
+   }
+   .contact-form-wrapper h1{
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-bottom: groove;
+    font-size: 20px;
+   }
+}
+
+@media screen and (max-width: 420px) {
+  
+  .contact-form-wrapper {
+    display: inline-block;
+    background-color: rgb(146, 36, 9);
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    height: auto;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+  }
+  
+  .contact-form-wrapper form label{
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .contact-form-wrapper form input{
+   display: block;
+   width: 200px;
+   border: none;
+   padding: 20px;
+   margin: 5px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .contact-form-wrapper form textarea{
+    display: block;
+    width: 200px;
+    height: 100px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+  .contact-form-wrapper form button{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+   }
+   .contact-form-wrapper form button:hover{
+    background-color: rgb(218, 98, 0);;
+   }
+   .contact-form-wrapper form input{
+    height: 30px;
+
+   }
+   .contact-form-wrapper h1{
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-bottom: groove;
+    font-size: 18px;
+   }
+}
+
+@media screen and (max-width: 350px) {
+  
+  .contact-form-wrapper {
+    display: inline-block;
+    background-color: rgb(146, 36, 9);
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    height: auto;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+  }
+  
+  .contact-form-wrapper form label{
+    font-size: 6vw;
+    font-family: 'poppins', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .contact-form-wrapper form input{
+   display: block;
+   width: 55vw;
+   border: none;
+   margin: 5px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .contact-form-wrapper form textarea{
+    display: block;
+    width: 55vw;
+    height: 27.5vw;
+    border: none;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+  .contact-form-wrapper form button{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+   }
+   .contact-form-wrapper form button:hover{
+    background-color: rgb(218, 98, 0);;
+   }
+   .contact-form-wrapper form input{
+    height: 30px;
+
+   }
+   .contact-form-wrapper h1{
+    font-weight: bold;
+    margin-bottom: 6vw;
+    border-bottom: groove;
+    font-size: 5vw;
+   }
+}

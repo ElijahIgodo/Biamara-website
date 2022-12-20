@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="Images/Biamara-favicon.png">
+    <link rel="stylesheet" href="Logo-design.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/db4319a107.js" crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#922409"> 
+    <title>Biamara - Logo designing services</title>
+  </head>
+
+
+
+  <body>
+
+   <!--The is the navigation bar-->
+
+  <nav class="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+    <div class="Bia">
+      <img class="im1" src="Images/Biamara-logo.png">
+    </div>
+    <ul class="navul">
+      <li class="navli"><a href="Biamara-home.html" class="active"><i class="menuiconfont fa-solid fa-house-user"></i>Home</a></li>
+      <li class="navli"><a href="#"><i class="menuiconfont fa-solid fa-users-viewfinder"></i>Biamara</a>
+        <div class="submenu1a">
+          <ul>
+            
+            <li><a href="Biamara-about.html">About us</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li class="hover-me"><a href="#">Company<i class="fa-solid fa-angle-right"></i></a>
+              <div class="submenu1b">
+                <ul>
+                  <li><a href="#">The owner</a></li>
+                  <li><a href="#">The team</a></li>
+                  <li><a href="#">The clients</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="navli"><a href="#"><i class="menuiconfont fa-solid fa-toolbox"></i>Services</a>
+        <div class="submenu1a submenu2a">
+          <ul>
+            <li><a href="Biamara-courses.html">Courses</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li class="hover-me"><a href="#">project<i class="fa-solid fa-angle-right"></i></a>
+              <div class="submenu1b submenu2b">
+                <ul>
+                  <li><a href="#">Web development</a></li>
+                  <li><a href="#">App development</a></li>
+                  <li><a href="#">Logo designing</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="navli"><a href="#"><i class="menuiconfont fa-solid fa-graduation-cap"></i>Codelab</a></li>
+      <li class="navli"><a href="#"><i class="menuiconfont fa-solid fa-phone"></i>Contact</a></li>
+      
+      <button class="register">Register</button><button class="signin">Sign in</button>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"><i class="fa-regular fa-circle-xmark"></i></label>
+      <hr class="in-hr">
+        <div class="in-logo">
+          <img class="im2" src="Images/Biamara-logo.png">
+          <div class="in-social">
+            <p class="in-p">Are you looking for something?</p>
+            <form class="in-search">
+              <input type="text" placeholder="Search.." name="search">
+              <button class="in-search-btn" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+  
+    </ul>
+  </nav>
+
+
+<!--Let's build a calculator-->
+
+<div class="calculator-container">
+
+    <div class="solve-div">
+     <h1>SOLVE</h1>
+    
+     <div class="solve-value">
+      <input type="number" id="solve1">
+      <p id="solve2"></p>
+      <input type="number" id="solve3">
+     </div>
+   </div>
+   
+   <div class="icon-button-div">
+     <div class="special-icons">
+    <button onclick="trash()"><i class="fa-solid fa-trash"></i></button>
+    <button onclick="deleting()"><i class="fa-solid fa-delete-left"></i></button>
+    <button onclick="percent()"><i class="fa-solid fa-percent"></i></button>
+    <button onclick="root()"><i class="fa-solid fa-square-root-variable"></i></button>
+     </div>
+
+     <div class="math-icons">
+      <button onclick="divide()"><i class="math-icon fa-solid fa-divide"></i></button>
+      <button onclick="multiply()"><i class="math-icon fa-solid fa-xmark"></i></button>
+      <button onclick="subtract()"><i class="math-icon fa-solid fa-minus"></i></button>
+      <button onclick="add()"><i class="math-icon fa-solid fa-plus"></i></button>
+     </div>
+
+     <div class="number-button-div">
+       <button onclick="nine()" onclick="nine2()">9</button>
+       <button onclick="eight()">8</button>
+       <button onclick="seven()">7</button>
+       <button onclick="six()">6</button>
+       <button onclick="five()">5</button>
+       <button onclick="four()">4</button>
+       <button onclick="three()">3</button>
+       <button onclick="two()">2</button>
+       <button onclick="one()">1</button>
+       <button onclick="zero()">0</button>
+       <button onclick="dot()">•</button>
+       <button class="equal-btn" onclick="equals()"><i class="fa-solid fa-equals"></i></button>
+     </div>
+   </div> 
+
+   <div class="result-div">
+    <h1>RESULT</h1>
+    <p id="result-value">0</p>
+   </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--This the footer-->
+
+  <footer>
+      
+    <div class="footer-container">
+
+    <div class="aboutusdiv"> 
+      <h1 class="aboutush1">About us</h1>
+        
+     <p class="aboutusp">Do you have an idea for a website or app, but lack the skills to make it happen? 
+      At Biamara Technology, we bring your vision to life through a wide range of 
+      web development services. Since 2000, we've provided clients with the tools and skills 
+      to overcome their online challenges. From the initial concept to the final result, 
+      we provide personalized attention and guidance throughout the whole process. 
+      As an industry-leading Web Development Company, we have the experience and track record 
+      to help you succeed in today's digital age.</p>
+    </div>
+    
+    <div class="jobmktdiv">
+      <h1 class="jobmkth1">Job market</h1>
+     
+     <ul class="joblist">
+       <li class="footlist"><a class="joblinks" href="#">Web developer</a></li>
+       <li class="footlist"><a class="joblinks" href="#">App developer</a></li>
+       <li class="footlist"><a class="joblinks" href="#">Graphic designer</a></li>
+       <li class="footlist"><a class="joblinks" href="#" >Database administrator</a></li>
+       <li class="footlist"><a class="joblinks" href="#">Computer security</a></li>
+       <li class="footlist"><a class="joblinks" href="#">Business intelligence</a></li>
+       <li class="footlist"><a class="joblinks" href="#" >Information security</a></li>
+       <li class="footlist"><a class="joblinks" href="#">Network engineer</a></li>
+       <li class="footlist"><a class="joblinks" href="#">Data analyst</a></li>
+       <li class="footlist"><a class="joblinks" href="#">Computer science analyst</a></li>
+     </ul>
+    </div>
+    
+    <div class="coursesdiv">
+     <h1 class="coursesh1">Courses</h1>
+    
+    <ul class="courseslist">
+      <li class="footlist"><a class="courseslinks" href="#"><i class="fa-brands fa-html5"></i> HTML</a></li>
+      <li class="footlist"><a class="courseslinks" href="#"><i class="fa-brands fa-css3"></i> CSS</a></li>
+      <li class="footlist" ><a class="courseslinks" href="#"><i class="fa-brands fa-square-js"></i> JavaScript</a></li>
+      <li class="footlist"><a class="courseslinks" href="#" ><i class="fa-brands fa-php"></i> PHP</a></li>
+      <li class="footlist" ><a class="courseslinks" href="#"><i class="fa-brands fa-python"></i> Python</a></li>
+      <li class="footlist"><a class="courseslinks" href="#"><i class="fa-brands fa-bootstrap"></i> Bootstrap</a></li>
+      <li class="footlist"><a class="courseslinks" href="#" ><i class="fa-brands fa-angular"></i> Angular</a></li>
+      <li class="footlist"><a class="courseslinks" href="#"><i class="fa-brands fa-laravel"></i> Laravel</a></li>
+      <li class="footlist"><a class="courseslinks" href="#"><i class="fa-brands fa-github"></i> Github</a></li>
+      <li class="footlist"><a class="courseslinks" href="#"><i class="fa-brands fa-react"></i> React</a></li>
+    </ul>
+    </div>
+
+    <div class="marketingdiv">
+    <h1 class="marketingh1">Marketing</h1>
+  
+  <ul class="marketinglist">
+    <li class="footlist"><a class="marketinglinks" href="#">Digital marketing</a></li>
+    <li class="footlist"><a class="marketinglinks" href="#">Search engine optimization</a></li>
+    <li class="footlist" ><a class="marketinglinks" href="#">Social media marketing</a></li>
+    <li class="footlist"><a class="marketinglinks" href="#" >Paid advertising</a></li>
+    <li class="footlist"><a class="marketinglinks" href="#">Content marketing</a></li>
+    <li class="footlist"><a class="marketinglinks" href="#">Affiliate marketing</a></li>
+    <li class="footlist"><a class="marketinglinks" href="#" >Product marketing</a></li>
+    <li class="footlist"><a class="marketinglinks" href="#">Video & Mobile marketing</a></li>
+    <li class="footlist"><a class="marketinglinks" href="#">Grow your facebook page</a></li>
+    <li class="footlist"><a class="marketinglinks" href="#">Public relation</a></li>
+  </ul>
+  </div>
+
+</div>
+    
+
+<div class="contactsdiv">
+  <h1 class="contactsh1">You can also contact us through these platforms</h1>
+  <li class="contacts-list">
+    <a class="facebooklinks" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+    <a class="instalinks" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    <a class="twitterlinks" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    <a class="youtubelinks" href="#"><i class="fa-brands fa-square-youtube"></i></a>
+    <a class="whatslinks" href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+    <a class="emaillinks" href="#"><i class="fa-solid fa-square-envelope"></i></a>
+    <a class="linkelinks" href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <a class="tumblinks" href="#"><i class="fa-brands fa-square-tumblr"></i></a>
+    <a class="telelinks" href="#"><i class="fa-brands fa-telegram"></i></a>
+    <a class="pintlinks" href="#" ><i class="fa-brands fa-square-pinterest"></i></a>
+  </li>
+ </div>
+
+  <hr>
+    <div class="footer-div">
+  <img class="footer-logo" src="Images/Biamara-logo.png">
+
+  <p class="footer-alrights">@2022 - Biamara &#183 All rights reserved</p>
+
+  <li class="ulfooter">
+    <a class="footer-links" href="#">Privacy policy</a>
+    <a class="footer-links" href="#">Term & Conditions</a>
+    <a class="footer-links" href="#">Cookies settings</a>
+    <a class="footer-links" href="#">Help & Support</a>
+    <a class="footer-links" href="#">About us</a>
+    <a class="footer-links" href="#">Sitemap</a>
+  </li>
+
+    </div>
+
+
+
+ </footer>
+ <script src="Biamara.js"></script>
+  </body>
+
+</html>

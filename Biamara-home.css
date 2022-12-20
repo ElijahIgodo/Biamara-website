@@ -1,0 +1,1612 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+     *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
+     }
+     body{
+      background-image: url('/Images/compu2.jpg');
+     }
+     
+     .navbar{
+      background-color: rgb(146, 36, 9);
+      width: 100%;
+      height: 75px;
+      line-height: 75px;
+      padding: 0px 40px;
+     }
+
+     .navbar .Bia{
+      float: left;
+      
+    }
+    
+    .im1{
+      width: 140px;
+      margin-block-start: 1.3rem;
+    }
+    .in-logo{
+      display: none;
+    }
+    .in-social{
+      display: none;
+    }
+    .in-hr{
+      display: none;
+    }
+
+    .navbar .navul{
+      float: right;
+    }
+
+    .navbar .navul .navli{
+      list-style: none;
+      display: inline-block;
+    }
+
+    .navbar .navul .navli a{
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0px 20px;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+    }
+
+/*customizing the submenu*/
+
+     .submenu1a{
+      display: none;
+     }
+    .navbar .navul .navli:hover .submenu1a{
+      display: block;
+      position: absolute;
+      background-color: rgb(146, 36, 9);
+      margin-top: -1px;
+      width: 100%;
+     }
+     .navbar ul li:hover .submenu1a ul{
+      display: block;
+     }
+     .navbar .navul .navli:hover .submenu1a ul li{
+      width: fit-content;
+      padding: 0px;
+      background: transparent;
+      text-align: left;
+      list-style: none;
+     }
+  
+     .navbar .navul .navli:hover .submenu1a ul li a:hover{
+      color: black;
+     }
+
+     .navbar .menuiconfont{
+      margin-right: 10px;
+     }
+    
+     .fa-angle-right{
+      padding-left: 30px;
+     }
+     .submenu1b{
+      display: none;
+     }
+     .hover-me:hover .submenu1b{
+      display: block;
+      position: absolute;
+      background-color: rgb(146, 36, 9);
+      margin-top: -45px;
+      margin-left: 110px;
+     }
+     .navbar .navul .navli:hover .submenu2b, .submenu1b ul li a{
+      font-size: 1vw;
+      font-style: italic;
+     }
+     .navbar .navul .navli:hover .submenu1b, .submenu2b ul li{
+      border-bottom: none;
+     }
+     .navbar ul li:hover .submenu2b ul{
+      width: fit-content;
+     }
+
+
+     .register{
+      padding: 3px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 3px;
+      padding-left: 5px;
+      padding-right: 5px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+     }
+     .signin{
+       color: rgb(0, 0, 0);
+      border: none;
+      padding: 3px;
+      margin-left: 5px;
+      border-radius: 3px;
+      padding-left: 5px;
+      padding-right: 5px;
+      }
+      .register:hover{
+       background-color: rgb(250, 116, 6);
+      }
+      .signin:hover{
+       background-color: rgb(250, 116, 6);
+       color: white;
+      }
+    
+
+    #check{
+      display: none;
+    }
+
+    .checkbtn{
+      font-size: 24px;
+      color: white;
+      float: right;
+      display: none;
+    }
+    
+    .navul .navli a:hover{
+      color: rgb(250, 116, 6);
+      
+      
+    }
+    .navul .navli a.active{
+      color: rgb(250, 116, 6);
+      
+    }
+
+
+  /*This is the introductory section*/   
+  
+    .intro-div{
+      background-image: url('/Images/web1.webp');
+      display: block;
+      width: 100%;
+      padding: 7.7vw;
+      
+    }
+
+    .h1-and-p-div{
+      display: inline-block;
+      width: 100%;
+      padding-block-end: 1vw;
+    }
+    
+    .h1intro{
+     color: white;
+     font-family: Helvetica, sans-serif;
+     font-size: 7vw;
+     letter-spacing: 2px;
+     line-height: normal;
+     width: 100%;
+     display: inline-block;
+   }
+   
+   .pintro{
+     color: rgb(253, 253, 253);
+     font-family: Helvetica, sans-serif;
+     font-size: 4vw;
+     letter-spacing: 1px;
+     margin-top: 0.9vw;
+     width: 100%;
+     display: inline-block;
+   }
+   
+   .quote2{
+     margin-right: 20px;
+     margin-top: 1.8vw;
+     display: inline-block;
+     height: 5vw;
+     border-radius: 25px;
+     border: none;
+     padding-left: 1.8vw;
+     padding-right: 1.8vw;
+     font-family: arial;
+     font-size: 2vw;
+     font-weight: bold;
+     cursor: pointer;
+    }
+   
+   .quote2:hover{
+     background-color: rgb(14, 123, 138);
+     color: white;
+     transition: 0.4s;
+    }
+   
+    .quote2:active{
+     opacity: 0.7;
+    }
+   
+    .catalog{
+     background-color: rgb(0, 0, 0);
+     color: white;
+     margin-right: 20px;
+     margin-top: 20px;
+     display: inline-block;
+     height: 5vw;
+     border-radius: 25px;
+     border: none;
+     padding-left: 1.8vw;
+     padding-right: 1.8vw;
+     font-family: arial;
+     font-size: 2vw;
+     cursor: pointer;
+    }
+   
+   .catalog:hover{
+     background-color: rgb(14, 123, 138);
+     color: white;
+     transition: 0.4s;
+    }
+   
+    .catalog:active{
+     opacity: 0.7;
+    }
+
+    .intro-button-div{
+     padding-block-end: 6vw;
+    }
+
+
+    table {
+      background-color: rgb(26, 71, 77);
+      width: 100%;
+      height: 13vw;
+      
+      cursor: pointer;
+      
+     }
+    
+     th {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-family: arial;
+      font-size: 2vw;
+     }
+    
+     th:hover {
+      box-shadow: 10px 10px 15px rgb(199, 123, 23);
+      transition: 0.4s;
+     }
+    
+     .fa-solid.fa-user-graduate,  .fa-sharp.fa-solid.fa-desktop, .fa-solid.fa-wifi, .fa-solid.fa-user-group{
+      font-size: 3.9vw;
+      padding-right: 1vw;
+      text-align: center;
+      padding-bottom: 1vw;
+     }
+
+      
+
+
+
+
+
+     .advantage-div{
+      background-color: white;
+      width: 100%;
+      display: block;
+      
+      text-align: center;
+     }
+     .advantage{
+      display: inline-block;
+      width: 25%;
+      padding: 15px;
+      margin: 20px;
+      border: solid 1px grey;
+      box-shadow: 3px 3px 10px grey;
+     }
+     .advaicon{
+      font-size: 5vw;
+      margin: 10px;
+      color: rgb(236, 123, 16);
+     }
+     .advah1{
+      font-size: 2vw;
+      margin: 5px;
+     }
+     .advap{
+      font-size: 1.4vw;
+     }
+    
+  
+
+
+
+
+    
+     .offer-div{
+      background-color: white; 
+      width: 100%;
+      padding: 2vw;
+      display: contents;
+      text-align: center;
+    }
+
+    .h2offer-div{
+     display: inline-block;
+     width: 43.5vw;
+     background-color: rgb(255, 255, 255);
+     vertical-align: top;
+     border-radius: 7px 20px;
+     padding: 3.7vw;
+     box-shadow: 0 0 8px 8px whitesmoke;
+    }
+
+    .proudh1{
+     display: block;
+     padding-bottom: 1.5vw;
+     font-size: 3vw;
+     text-align: center;
+    }
+   
+    .h2offer{
+      color: rgb(0, 0, 0);
+      font-family: arial;
+      display: block;
+      text-align: center;
+      font-size: 1.76vw;
+      letter-spacing: 1px;
+    }
+
+    .first-offer-div, .second-offer-div{
+      width: 100%;
+      display: block;
+      background-color: white;
+      padding: 4vw;
+    }
+    
+   
+    .pimage {
+    width: 43.5vw;
+    box-shadow: 0 0 8px 8px whitesmoke;
+    vertical-align: bottom;
+    }
+   
+  
+/*This is the testimony column*/
+
+.testimony {
+  background-color: white;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+ }
+
+ .testimony-container-div {
+  background-color: rgb(22, 72, 105);
+  display: inline-block;
+  width: 30vw;
+  margin: 1vw;
+  border-radius: 30px;
+  
+ }
+
+.h1testimony{
+ font-size: 2.5vw;
+ font-family: arial;
+ display: block;
+ width:100%;
+ text-align: center;
+ padding-bottom: 1vw;
+ color: rgb(255, 162, 40);
+}
+
+ .ptestimony {
+  font-family: 'poppins', sans-serif;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1vw;
+  font-size: 1.5vw;
+  line-height: 2.2vw;
+  letter-spacing: 0.01vw;
+  color: white;
+}
+
+.container-image {
+  margin-top: 2vw;
+  width: 17vw;
+  border-radius: 25%;
+}
+
+.fa-solid.fa-quote-right {
+  font-size: 4vw;
+  color:rgb(199, 123, 23);
+  margin-bottom: 2vw;
+}
+
+.whatpeoplesay {
+  padding: 1.3vw;
+  margin-bottom: 1vw;
+  font-size: 3.5vw;
+  color: rgb(22, 72, 105);
+  text-align: center;
+  box-shadow: 5px 10px 5px rgb(22, 72, 105);
+  border-bottom-left-radius: 20px;
+}
+
+
+
+
+/*This is the footer section*/
+
+
+    .footer-container {
+      display: flex;
+      width: 100%;
+      background-color: rgb(34, 34, 27);
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    
+     .jobmktdiv, .coursesdiv, .marketingdiv {
+      display: inline-block;
+      width: 40%;
+    }
+    .marketingdiv{
+      padding-right: 3em;
+    }
+    
+    .aboutusdiv {
+      padding-left: 3em;
+      width: 53%;
+      padding-inline-end: 4em;
+    }
+    
+    .aboutusp{
+     width: 100%;
+     display: inline-block;
+     margin-right: 0;
+    }
+    
+    .footlist {
+     list-style: none;
+     
+    }
+    
+    .joblinks, .courseslinks, .marketinglinks, .aboutusp{
+     color: rgb(148, 148, 148);
+     font-size: 16px;
+     font-family: arial;
+    }
+    
+    .aboutusp{
+     line-height: 25px;
+    }
+    
+    .joblinks, .courseslinks, .marketinglinks {
+      text-decoration: none;
+      transition: 0.5s;
+      line-height: 33px;
+    }
+    
+    .aboutush1, .jobmkth1,.coursesh1, .marketingh1 {
+      padding-block-end: 1rem;
+      color: white;
+      font-size: 2.5vw;
+    }
+    
+    .joblinks:hover, .courseslinks:hover, .marketinglinks:hover{
+     color: rgb(172, 107, 10);
+     padding-left: 15px;
+     transition: 0.2s;
+    }
+    
+    
+    /*social media footer*/
+    
+    
+    .contactsdiv {
+      width: 100%;
+      background-color: rgb(34, 34, 27);
+      text-align: center;
+    }
+    
+    .contacts-list {
+      color: white;
+      display: inline-block;
+      width: 100%;
+      font-family: arial;
+      line-height: 60px;
+      margin-top: 0px;
+      text-align: center;
+      padding: 20px;
+      cursor: pointer;
+      font-size: 38px;
+      
+    }
+    
+    .contactsh1 {
+      color: white;
+      display: block;
+      font-size: 1.5vw;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      font-family: arial;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    
+    .facebooklinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 60px;
+      margin-left: auto;
+      
+    }
+    .facebooklinks:hover {
+     color: rgb(26, 82, 235);
+    }
+    
+    .instalinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 60px;
+    }
+    .instalinks:hover {
+      color: rgb(173, 10, 173);
+    }
+    
+    .twitterlinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 60px;
+    }
+    .twitterlinks:hover {
+      color: rgb(32, 147, 255);
+    }
+    
+    .youtubelinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 60px;
+    }
+    .youtubelinks:hover {
+      color: rgb(255, 0, 0);
+    }
+    
+    .whatslinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 60px;
+    }
+    .whatslinks:hover {
+      color: rgb(18, 155, 18);
+    }
+    
+    .emaillinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 60px;
+    }
+    .emaillinks:hover {
+      color: rgb(228, 61, 10);
+    }
+    
+    .linkelinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 60px;
+    }
+    .linkelinks:hover {
+      color: rgb(23, 23, 231);
+    }
+    
+    .tumblinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 60px;
+    }
+    .tumblinks:hover {
+      color: purple;
+    }
+    
+    .telelinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 60px;
+    }
+    .telelinks:hover {
+      color: rgb(26, 158, 235); 
+    }
+    
+    .pintlinks {
+      text-decoration: none;
+      color: white;
+      margin-right: auto;
+    }
+    .pintlinks:hover {
+      color: rgb(255, 0, 0);
+     
+    }
+    
+    
+    
+    hr {
+      margin-bottom: 0px;
+      margin-block-start: 0;
+      
+    }
+    
+    
+    /*footer 2*/
+    
+    .footer-div {
+      background-color: rgb(58, 15, 37);
+      margin-top: 0px;
+      margin-bottom: -1%;
+      width: 100%;
+    }
+    
+    .footer-logo {
+      width: 200px;
+      padding: 10px;
+      padding-top: 15px;
+    }
+    
+    .footer-alrights {
+      display: inline-block;
+      margin-top: 25px;
+      vertical-align: top;
+      font-size: 18px;
+      color: rgb(126, 125, 123);
+    }
+    
+    .ulfooter {
+      display: inline-block;
+      margin-top: 16px;
+      padding-top: 10px;
+      padding-left: 30px;
+      vertical-align: top;
+     
+      
+     
+    }
+    
+    .footer-links {
+      text-decoration: none;
+      color: rgb(126, 125, 123);
+      padding: 10px;
+      display: inline-block;
+      margin-top: 0;
+      margin-inline-start: 10px;
+      padding-top: 0;
+      font-size: 14px;
+    }
+    
+    .footer-links:hover{
+      color: rgb(199, 123, 23);
+      transition: 0.1s;
+    }
+    
+    .contacts-list:hover{
+      box-shadow: 5px 5px 10px rgb(199, 123, 23);
+      transition: 0.1s;
+    }
+    .footer-links:hover {
+      color: rgb(199, 123, 23);
+      transition: 0.1s;
+    }
+  
+  
+  
+  
+  /*responsive for navition bar*/
+  
+    @media screen and (max-width: 789px){
+      .navbar{
+      padding: 0px;
+    }
+    .Bia{
+      padding-inline-start: 40px;
+    }
+    .navul {
+      background-color: rgb(146, 36, 9);
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      left: -100%;
+      transition: 0.6s ease;
+      overflow: auto;
+    }
+    .navbar .navul .navli{
+      display: block;
+      padding-top: 10px;
+      text-align: center;
+      font-style: italic;
+    }
+    .navli {
+     line-height: 50px; 
+    }
+    .checkbtn{
+      display: block;
+      padding-inline-end: 1.5em;
+    }
+    #check:checked ~ .navul{
+      left: 0;
+    }
+    .quote{
+      display: none;
+     }
+    .in-logo{
+      width: 100%;
+      display: block;
+      text-align: center;
+      line-height: 15px;
+     }
+    .im2{
+     width: 100px;
+     margin-bottom: 4vw;
+    }
+    .in-social{
+      display: inline-block;
+      padding-left: auto;
+      padding-right: auto;
+      font-size: 8vw;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      padding-bottom: 5px;
+    }  
+    .in-p{
+      font-size: 3vw;
+      width: 100%;
+      display: block;
+      cursor: initial;
+      padding-bottom: 3vw;
+    }
+    
+    form.in-search input[type=text]{
+      padding: 1.2vw;
+      font-size: 3vw;
+      border: 1px solid rgb(250, 116, 6);
+      
+      width: 60%;
+      background: #f1f1f1;
+      
+    }
+    form.in-search .in-search-btn {
+      width: 10%;
+      padding: 1.2vw;
+      border: 1px solid rgb(250, 116, 6);
+      font-size: 3vw;
+      border-left: none;
+      background: rgb(250, 116, 6);
+      color: white;
+      cursor: pointer;
+      
+    }
+
+    .in-hr{
+      display: block;
+      margin-top: 60px;
+      margin-bottom: 2vw;
+      width: 100%;
+    }
+
+    .navbar .navul .navli:hover .submenu1a{
+      display: block;
+      position: relative;
+      background-color: rgb(146, 36, 9);
+      margin-top: -1px;
+      width: 50%;
+      
+     }
+     .navbar ul li:hover .submenu1a ul{
+      display: block;
+     }
+     .navbar ul li:hover .submenu1a ul li a{
+      font-size: 13px;
+     }
+
+
+     .navbar .navul .navli:hover .submenu1a ul li{
+      width: fit-content;
+      padding: 0px;
+      background: transparent;
+      text-align: left;
+      list-style: none;
+     }
+     .hover-me:hover .submenu1b{
+      display: block;
+      position: relative;
+      background-color: rgb(146, 36, 9);
+      margin-top: -45px;
+      margin-left: 110px;
+     }
+     .navbar .navul .navli:hover .submenu2b, .submenu1b ul li a{
+      font-size: 13px;
+      font-style: italic;
+     }
+     .navbar .navul .navli:hover .submenu1a ul li a{
+      color: rgb(250, 116, 6);
+     }
+     
+     .hover-me:hover .submenu1b, .submenu2b ul {
+      width: 100%;
+     }
+    .fa-angle-right{
+      padding-left: 6px;
+     }
+
+    }
+
+
+    @media screen and (min-width: 790px) and (max-width: 1024px){
+      .navbar{
+      padding: 0px 40px;
+    }
+    .navbar .navul .navli a{
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0px 10px;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      font-size: 14px;
+    }
+    .navul .navli a:hover{
+      color: rgb(250, 116, 6);
+    }
+    .navul .navli a.active{
+      color: rgb(250, 116, 6);
+    }
+    .im1{
+      width: 120px;
+      margin-block-start: 1.5rem;
+    }
+    .quote{
+      display: inline-block;
+      height: 35px;
+      border-radius: 25px;
+      border: none;
+      margin-left: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-family: arial;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      
+     }
+  }
+   
+  @media screen and (min-width: 790px) and (max-width: 1139px){
+    .navbar .menuiconfont{
+      display: none;
+     }
+     .navbar .navul .navli:hover .submenu1a{
+      display: block;
+      position: absolute;
+      background-color: rgb(146, 36, 9);
+      margin-top: -3px;
+      width: 100%;
+     }
+  }
+
+  /*responsive for footer*/
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .footer-container {
+      display: block;
+      width: 100%;
+      background-color: rgb(34, 34, 27);
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+     
+    }
+    .aboutusdiv {
+      width: 40%;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .jobmktdiv{
+      display: inline-block;
+      width: 40%;
+      
+    }
+    .coursesdiv, .marketingdiv{
+      display: inline-block;
+      width: 40%;
+      padding-block-start: 1.5em;
+    }
+    .marketingdiv{
+      padding-right: 0;
+    }
+
+    .contactsdiv {
+      width: 100%;
+      background-color: rgb(34, 34, 27);
+      text-align: center;
+    }
+    
+    .contacts-list {
+      color: white;
+      display: inline-block;
+      width: 100%;
+      font-family: arial;
+      line-height: 60px;
+      margin-top: 0px;
+      text-align: center;
+      padding:20px;
+      cursor: pointer;
+      font-size: 24px;
+      
+    }
+    
+    .contactsh1 {
+      color: white;
+      display: block;
+      font-size: 1.5vw;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      font-family: arial;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .facebooklinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+      margin-left: auto;
+      
+    }
+    .facebooklinks:hover {
+     color: rgb(26, 82, 235);
+    }
+    
+    .instalinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .instalinks:hover {
+      color: rgb(173, 10, 173);
+    }
+    
+    .twitterlinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .twitterlinks:hover {
+      color: rgb(32, 147, 255);
+    }
+    
+    .youtubelinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .youtubelinks:hover {
+      color: rgb(255, 0, 0);
+    }
+    
+    .whatslinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .whatslinks:hover {
+      color: rgb(18, 155, 18);
+    }
+    
+    .emaillinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .emaillinks:hover {
+      color: rgb(228, 61, 10);
+    }
+    
+    .linkelinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .linkelinks:hover {
+      color: rgb(23, 23, 231);
+    }
+    
+    .tumblinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .tumblinks:hover {
+      color: purple;
+    }
+    
+    .telelinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .telelinks:hover {
+      color: rgb(26, 158, 235); 
+    }
+    
+    .pintlinks {
+      text-decoration: none;
+      color: white;
+      margin-right: auto;
+    }
+    .pintlinks:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .footer-div {
+      background-color:rgb(58, 15, 37);
+      margin-top: 0px;
+      margin-bottom: -1%;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      width: 200px;
+      padding: 10px;
+      padding-top: 15px;
+    }
+    
+    .footer-alrights {
+      display: inline-block;
+      margin-top: 25px;
+      vertical-align: top;
+      font-size: 18px;
+    }
+    
+    .ulfooter {
+      display: inline-block;
+      margin-top: 0;
+      padding-top: 2px;
+      padding-left: 0;
+      vertical-align: top;
+      width: 100%;
+    }
+    
+    .footer-links {
+      text-decoration: none;
+      color: rgb(126, 125, 123);
+      padding: 7px;
+      display: inline-block;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 14px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1323px){
+    .footer-div {
+      background-color:rgb(58, 15, 37);
+      margin-top: 0px;
+      margin-bottom: -1%;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      width: 200px;
+      padding: 10px;
+      padding-top: 15px;
+    }
+    
+    .footer-alrights {
+      display: inline-block;
+      margin-top: 25px;
+      vertical-align: top;
+      font-size: 18px;
+    }
+    
+    .ulfooter {
+      display: inline-block;
+      margin-top: 0;
+      padding-top: 2px;
+      padding-left: 0;
+      vertical-align: top;
+      width: 100%;
+    }
+    
+    .footer-links {
+      text-decoration: none;
+      color: rgb(126, 125, 123);
+      padding: 7px;
+      display: inline-block;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 18px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    .footer-container {
+      display: block;
+      width: 100%;
+      background-color: rgb(34, 34, 27);
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+     
+    }
+    .aboutusdiv {
+      width: 40%;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .jobmktdiv{
+      display: inline-block;
+      width: 40%;
+      
+    }
+    .coursesdiv, .marketingdiv{
+      display: inline-block;
+      width: 40%;
+      padding-block-start: 1.5em;
+    }
+    .marketingdiv{
+      padding-right: 0;
+    }
+
+    .contactsdiv {
+      width: 100%;
+      background-color: rgb(34, 34, 27);
+      text-align: center;
+    }
+    
+    .contacts-list {
+      color: white;
+      display: inline-block;
+      width: 75%;
+      font-family: arial;
+      line-height: 60px;
+      margin-top: 0px;
+      text-align: center;
+      padding:20px;
+      cursor: pointer;
+      font-size: 24px;
+      
+    }
+    
+    .contactsh1 {
+      color: white;
+      display: block;
+      font-size: 1.5vw;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      font-family: arial;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .facebooklinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+      margin-left: auto;
+      
+    }
+    .facebooklinks:hover {
+     color: rgb(26, 82, 235);
+    }
+    
+    .instalinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .instalinks:hover {
+      color: rgb(173, 10, 173);
+    }
+    
+    .twitterlinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .twitterlinks:hover {
+      color: rgb(32, 147, 255);
+    }
+    
+    .youtubelinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .youtubelinks:hover {
+      color: rgb(255, 0, 0);
+    }
+    
+    .whatslinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .whatslinks:hover {
+      color: rgb(18, 155, 18);
+    }
+    
+    .emaillinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .emaillinks:hover {
+      color: rgb(228, 61, 10);
+    }
+    
+    .linkelinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .linkelinks:hover {
+      color: rgb(23, 23, 231);
+    }
+    
+    .tumblinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .tumblinks:hover {
+      color: purple;
+    }
+    
+    .telelinks {
+      text-decoration: none;
+      color: white;
+      padding-right: 50px;
+    }
+    .telelinks:hover {
+      color: rgb(26, 158, 235); 
+    }
+    
+    .pintlinks {
+      text-decoration: none;
+      color: white;
+      margin-right: auto;
+    }
+    .pintlinks:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .footer-div {
+      background-color:rgb(58, 15, 37);
+      margin-top: 0px;
+      margin-bottom: -1%;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      width: 200px;
+      padding: 10px;
+      padding-top: 15px;
+    }
+    
+    .footer-alrights {
+      display: inline-block;
+      margin-top: 25px;
+      vertical-align: top;
+      font-size: 18px;
+    }
+    
+    .ulfooter {
+      display: inline-block;
+      margin-top: 0;
+      padding-top: 2px;
+      padding-left: 0;
+      vertical-align: top;
+      width: 70%;
+    }
+    
+    .footer-links {
+      text-decoration: none;
+      color: rgb(126, 125, 123);
+      padding: 7px;
+      display: inline-block;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 14px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    .footer-container {
+      display: block;
+      width: 100%;
+      background-color: rgb(34, 34, 27);
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    
+     .jobmktdiv, .coursesdiv, .marketingdiv {
+      display: inline-block;
+      width: 100%;
+    }
+    .marketingdiv{
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 0;
+      padding-top: 30px;
+    }
+    
+    .aboutusdiv {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    .coursesdiv {
+      width: 100%;
+      padding-top: 30px;
+    }
+    
+    .aboutusp{
+     width: 100%;
+     display: inline-block;
+     margin-right: 0;
+    }
+    
+    .footlist {
+     list-style: none;
+     
+    }
+    
+    .joblinks, .courseslinks, .marketinglinks, .aboutusp{
+     color: rgb(148, 148, 148);
+     font-size: 16px;
+     font-family: arial;
+    }
+    
+    .aboutusp{
+     line-height: 25px;
+    }
+    
+    .joblinks, .courseslinks, .marketinglinks {
+      text-decoration: none;
+      transition: 0.5s;
+      line-height: 33px;
+    }
+    
+    .aboutush1, .jobmkth1,.coursesh1, .marketingh1 {
+      padding-block-end: 1rem;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .joblinks:hover, .courseslinks:hover, .marketinglinks:hover{
+     color: rgb(172, 107, 10);
+     padding-left: 15px;
+     transition: 0.2s;
+    }
+
+    .contactsdiv {
+      width: 100%;
+      background-color: black;
+      text-align: center;
+      display: none;
+    }
+  
+
+    .footer-div {
+      background-color:rgb(58, 15, 37);
+      margin-top: 0px;
+      margin-bottom: -1%;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      width: 150px;
+      padding: 10px;
+      padding-top: 15px;
+      padding-bottom: 0;
+    }
+    
+    .footer-alrights {
+      display: inline-block;
+      margin-top: 25px;
+      vertical-align: top;
+      font-size: 18px;
+    }
+    
+    .ulfooter {
+      display: inline-block;
+      margin-top: 0;
+      padding-top: 2px;
+      padding-left: 0;
+      vertical-align: top;
+      width: 70%;
+    }
+    
+    .footer-links {
+      text-decoration: none;
+      color: rgb(126, 125, 123);
+      padding: 7px;
+      display: inline-block;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 14px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  /*Responsive for Offer container*/
+
+  @media screen and (max-width: 600px) {
+    .offer-div{
+      background-color: rgb(212, 198, 191); 
+      width: 100%;
+      padding: 2vw;
+    }
+
+    .h2offer-div{
+     display: block;
+     width: 100%;
+     background-color: rgb(255, 255, 255);
+     border-radius: 7px 20px;
+     padding: 5vw;
+     box-shadow: 0 0 8px 8px whitesmoke;
+    }
+   
+    .h2offer{
+      color: rgb(0, 0, 0);
+      font-family: arial;
+      display: inline-block;
+      text-align: center;
+      font-size: 4vw;
+      letter-spacing: 1px;
+    }
+
+    .proudh1{
+      display: block;
+      padding-bottom: 1.5vw;
+      font-size: 5vw;
+      text-align: center;
+     }
+
+    .first-offer-div, .second-offer-div{
+      width: 100%;
+      display: block;
+      background-color: white;
+      padding: 4vw;
+    }
+    
+   
+    .pimage {
+     width: 100%;
+     box-shadow: 0 0 8px 8px whitesmoke;
+    }
+
+    .testimony {
+      background-color: rgb(32, 98, 143);
+      margin-bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+     }
+    
+     .testimony-container-div {
+      background-color: rgb(22, 72, 105);
+      display: block;
+      width: 70%;
+      margin: 2vw;
+      border-radius: 30px;
+      margin-right: auto;
+      margin-left: auto;
+     }
+
+     .h1testimony{
+      font-size: 4vw;
+      font-family: arial;
+      display: block;
+      width:100%;
+      text-align: center;
+      padding-bottom: 1vw;
+      color: rgb(199, 123, 23);
+     }
+     
+      .ptestimony {
+       font-family: 'poppins', sans-serif;
+       display: block;
+       width: 100%;
+       text-align: center;
+       padding: 3vw;
+       font-size: 3vw;
+       line-height: 4vw;
+       letter-spacing: 0.01vw;
+       color: white;
+     }
+     
+     .container-image {
+       margin-top: 2vw;
+       width: 30vw;
+       border-radius: 25%;
+     }
+     
+     .fa-solid.fa-quote-right {
+       font-size: 5vw;
+       color:rgb(199, 123, 23);
+       margin-bottom: 2vw;
+     }
+     
+     .whatpeoplesay {
+       padding: 1.3vw;
+       margin-bottom: 3vw;
+       font-size: 3.5vw;
+       color: white;
+       text-align: center;
+       box-shadow: 5px 10px 5px rgb(22, 72, 105);
+       border-bottom-left-radius: 20px;
+     }
+  }
+
+
+
+/*Responsive for advantage div*/
+
+
+  @media screen and (max-width: 515px) {
+   
+    .advantage-div{
+      background-color: white;
+      width: 100%;
+      padding-bottom: 10px;
+      display: block;
+      text-align: center;
+      padding-top: 10px;
+      
+      
+      
+     }
+     .advantage{
+      display: block;
+      width: 80%;
+      padding: 15px;
+      margin: 20px;
+      border: solid 1px grey;
+      box-shadow: 3px 3px 10px grey;
+      margin-right: auto;
+      margin-left: auto;
+      
+     }
+     .advaicon{
+      font-size: 7vw;
+      margin: 10px;
+      color: rgb(236, 123, 16);
+     }
+     .advah1{
+      font-size: 4vw;
+      margin: 5px;
+     }
+     .advap{
+      font-size: 3vw;
+     }
+     
+  }
