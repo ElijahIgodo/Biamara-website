@@ -162,6 +162,7 @@
     }
 
 
+
 /*Let's build a calculator*/
 
 .calculator-container{
@@ -192,7 +193,7 @@
   display: inline;
 }
 .solve-value input{
-  width: 20%;
+  width: 40%;
   padding: 0 15px;
   font-size: 25px;
   font-weight: bold;
@@ -204,31 +205,17 @@
   border-radius: 12px;
 }
 .calculator-container .icon-button-div{
+  justify-content: center;
   width: 100%;
   text-align: center;
   background-color: blue;
   padding-top: 5px;
-  height: 200px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
-.icon-button-div .number-button-div{
-  width: 82%;
-  text-align: center;
-  background-color: white;
-  padding-top: 5px;
-  margin-left: 0;
-  float: left;
-  display: inline;
-}
-.number-button-div .equal-btn{
-  background-color: green;
-  border-radius: 25px;
-  border: solid green;
-  color: white;
-}
+
 .icon-button-div .special-icons{
-  display: inline;
-  width: 85%;
+  width: 100%;
 }
 .special-icons button{
   width: 50px;
@@ -236,15 +223,10 @@
   font-size: 18px;
 }
 
-.number-button-div button{
-  width: 50px;
-  font-size: 20px;
-  margin: 5px;
-}
+
 .calculator-container .math-icons{
-  width: 15%;
-  float: right;
-  margin-right: 8px;
+  width: 100%;
+  margin: 8px;
 }
 .calculator-container .math-icons button{
   width: 50px;
