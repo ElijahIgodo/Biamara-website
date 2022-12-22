@@ -842,6 +842,22 @@
     .fa-angle-right{
       padding-left: 6px;
      }
+        
+     .catalog{
+      background-color: rgb(109, 66, 10);
+      color: white;
+      margin-right: 20px;
+      margin-top: 20px;
+      display: inline-block;
+      height: 5vw;
+      border-radius: 25px;
+      border: none;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      font-family: arial;
+      font-size: 2.5vw;
+      cursor: pointer;
+     }
 
     }
 
