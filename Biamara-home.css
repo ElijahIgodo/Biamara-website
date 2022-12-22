@@ -9,6 +9,7 @@
      }
      body{
       background-image: url('Images/compu2.jpg');
+      background-size: cover;
      }
      
      .navbar{
@@ -431,6 +432,9 @@
   text-align: center;
   box-shadow: 5px 10px 5px rgb(22, 72, 105);
   border-bottom-left-radius: 20px;
+}
+.whatpeoplesay2 {
+  display: none;
 }
 
 
@@ -1510,6 +1514,11 @@
       width: 100%;
       text-align: center;
       padding-bottom: 10px;
+      display: flex;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: mandatory;
+      scroll-snap-align: start;
      }
     
      .testimony-container-div {
@@ -1520,6 +1529,8 @@
       border-radius: 30px;
       margin-right: auto;
       margin-left: auto;
+      flex-shrink: 0;
+      margin: 10px;
      }
 
      .h1testimony{
@@ -1556,7 +1567,11 @@
        margin-bottom: 2vw;
      }
      
-     .whatpeoplesay {
+      .whatpeoplesay {
+      display: none;
+    }
+     
+     .whatpeoplesay2 {
        padding: 1.3vw;
        margin-bottom: 3vw;
        font-size: 3.5vw;
@@ -1564,6 +1579,8 @@
        text-align: center;
        box-shadow: 5px 10px 5px rgb(22, 72, 105);
        border-bottom-left-radius: 20px;
+       border-bottom-right-radius: 20px;
+       display: block;
      }
   }
 
