@@ -847,6 +847,7 @@ hr {
   left: -100%;
   transition: 0.6s ease;
   overflow: auto;
+  z-index: 5;
 }
 .navbar .navul .navli{
   display: block;
