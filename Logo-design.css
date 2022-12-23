@@ -162,6 +162,305 @@
     }
 
 
+/*This is the logo container section*/
+
+.logo-intro-top-div{
+  width: 100%;
+  padding: 4vw;
+  background-color: aqua;
+  text-align: center;
+}
+.logo-intro-top-div h1, span{
+  font-size: 8vw;
+  font-family: arial;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.logo-intro-top-div h1 span{
+  color: rgb(146, 36, 9);
+}
+.logo-intro-top-div .p1{
+  font-size: 4.5vw;
+  font-family: arial;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.logo-intro-top-inner-div{
+  width: 100%;
+  text-align: center;
+}
+.logo-intro-top-inner-div p{
+  font-size: 3vw;
+  color: rgb(146, 36, 9);
+  font-family: arial;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  animation-name: rating;
+  animation-duration: 5s;
+}
+
+@keyframes rating {
+  from {
+    margin-left: 100%;
+    width: 80%;
+  }
+  to {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+.logo-rating{
+  animation-name: star;
+  animation-duration: 5s;
+}
+
+@keyframes star {
+  from {
+    margin-left: 0;
+    width: 80%;
+  }
+  to {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+
+.logo-intro-top-inner-div div{
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+}
+
+/*The container section*/
+
+.logo-container{
+  width: 100%;
+  padding: 2vw;
+  text-align: center;
+  position: relative;
+  overflow-x: scroll;
+}
+.logo-selection{
+  display: inline-block;
+  margin: 2vw;
+  border: solid 2px rgb(240, 231, 231);
+  width: 15%;
+  position: relative;
+}
+.logo-container .logo-selection img{
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container .logo-selection .btn1{
+  padding-right: 0.4vw;
+  padding-left: 0.5vw;
+  font-size: 2vw;
+  background-color: rgb(233, 230, 230);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+  top: 2px;
+  right: 2px;
+}
+.logo-container .logo-selection .btn1:hover{
+  background-color: rgb(94, 99, 97);
+  color: rgb(199, 191, 191);
+  transition: 0.3s ease;
+}
+.logo-container .logo-selection .btn1:active{
+  color: white;
+}
+.logo-selection:hover{
+  border: solid 2px rgb(201, 192, 192);
+  transition: 0.4s ease;
+  background-image: linear-gradient(black, white);
+}
+.logo-selection:hover img{
+  opacity: 0.5;
+  transition: 0.4s ease;
+}
+.logo-selection:hover .btn1{
+  display: inline-block;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+  .logo-selection{
+    display: inline-block;
+    margin: 2vw;
+    border: solid 2px rgb(240, 231, 231);
+    width: 25%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 499px){
+  .logo-selection{
+    display: inline-block;
+    margin: 2vw;
+    border: solid 2px rgb(240, 231, 231);
+    width: 35%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 770px){
+  .logo-container .logo-selection .btn1{
+    padding-right: 0.4vw;
+    padding-left: 0.7vw;
+    font-size: 3.5vw;
+  }
+}
+
+
+/*The bottom intro section*/
+
+.logo-intro-bottom-div{
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  background-color: aqua;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+.logo-intro-bottom-div h1{
+  font-size: 25px;
+}
+.logo-intro-bottom-div p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.logo-intro-bottom-div button{
+  width: 70vw;
+  padding: 5px 5px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: rgb(146, 36, 9);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.logo-intro-bottom-div button:hover{
+  background-color: black;
+  transition: 0.5s;
+}
+.logo-intro-bottom-div button:active{
+  letter-spacing: 1.5px;
+  opacity: 0.8;
+}
+
+/*The form section*/
+
+.logo-form, .logo-form1, .logo-form2, .logo-form3, .logo-form4, 
+.logo-form5, .logo-form6, .logo-form7, .logo-form8, .logo-form9, 
+.logo-form10, .logo-form11, .logo-form12, .logo-form13, .logo-form14, 
+.logo-form15, .logo-form16, .logo-form17, .logo-form18, .logo-form19, 
+.logo-form20, .logo-form21, .logo-form22, .logo-form23, .logo-form24, 
+.logo-form25, .logo-form26, .logo-form27, .logo-form28, .logo-form29, 
+.logo-form30, .logo-form31, .logo-form32, .logo-form33, .logo-form34, 
+.logo-form35, .logo-form36, .logo-form37, .logo-form38, .logo-form39, 
+.logo-form40{
+  width: 15.625rem;
+  background-color: rgb(211, 209, 209);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 50px grey;
+  border-radius: 30px;
+  position: absolute;
+  display: none;
+  margin-top: 3.25rem;
+  z-index: 2;
+}
+.logo-form h2{
+  padding-bottom: 15px;
+}
+.logo-form input, select{
+  width: 90%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  margin: 10px;
+  margin-top: 0;
+}
+.logo-form .opt-value:hover{
+  background-color: rgb(146, 36, 9);
+}
+.logo-form .btn2{
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: solid 1px black;
+  left: 60px;
+}
+.logo-form .btn2:hover{
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+.logo-form .btn2:active{
+ letter-spacing: 1px;
+ font-style: italic;
+}
+
+@media screen and (max-width: 900px){
+  .logo-form, .logo-form1, .logo-form2, .logo-form3, .logo-form4, 
+.logo-form5, .logo-form6, .logo-form7, .logo-form8, .logo-form9, 
+.logo-form10, .logo-form11, .logo-form12, .logo-form13, .logo-form14, 
+.logo-form15, .logo-form16, .logo-form17, .logo-form18, .logo-form19, 
+.logo-form20, .logo-form21, .logo-form22, .logo-form23, .logo-form24, 
+.logo-form25, .logo-form26, .logo-form27, .logo-form28, .logo-form29, 
+.logo-form30, .logo-form31, .logo-form32, .logo-form33, .logo-form34, 
+.logo-form35, .logo-form36, .logo-form37, .logo-form38, .logo-form39, 
+.logo-form40{
+  width: 12.625rem;
+  background-color: rgb(211, 209, 209);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 50px grey;
+  border-radius: 30px;
+  position: absolute;
+  display: none;
+  margin-top: 6.25rem;
+  z-index: 2;
+}
+.logo-form h2{
+  padding-bottom: 15px;
+  font-size: 19px;
+}
+.logo-form input, select{
+  width: 90%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 10px;
+  margin-top: 0;
+}
+.logo-form .opt-value:hover{
+  background-color: rgb(146, 36, 9);
+}
+.logo-form .btn2{
+  padding: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: solid 1px black;
+  left: 60px;
+  
+}
+}
+
+
+
+
+
 
 /*Let's build a calculator*/
 
