@@ -265,6 +265,7 @@
   display: none;
   top: 2px;
   right: 2px;
+  cursor: pointer;
 }
 .logo-container .logo-selection .btn1:hover{
   background-color: rgb(94, 99, 97);
