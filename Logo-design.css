@@ -355,8 +355,10 @@
 
 @media screen and (max-width: 360px){
   .logo-intro-bottom-div h1{
-    font-size: 20px;
-    padding: 0 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-bottom: groove;
+    margin-bottom: 8px;
   }
   .logo-intro-bottom-div p{
     font-size: 18px;
