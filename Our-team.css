@@ -60,7 +60,7 @@
   font-display: flex;
   padding-bottom: 8px;
 }
-.team-grandchild-div1 h3, .fa-solid{
+.team-grandchild-div1 h3, .fa-icon{
   display: inline-block;
   margin: 0 5px;
 }
@@ -79,14 +79,14 @@
 .team-grandchild-div2 .fa-heart{
   margin: 0 15px;
   font-size: 25px;
-  color: red;
+  color: white;
 }
-.team-grandchild-div2 .fa-solid{
+.team-grandchild-div2 .fa-icon{
   margin: 0 15px;
   font-size: 25px;
   color: rgb(11, 119, 25);
 }
-.team-grandchild-div2 .fa-solid:hover{
+.team-grandchild-div2 .fa-icon:hover{
   color: black;
 }
 
