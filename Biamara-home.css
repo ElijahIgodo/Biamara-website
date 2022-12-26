@@ -431,7 +431,7 @@
     .grand-child{
       width: 100%;
       display: block;
-      margin: 10px 20px;
+      margin: 10px 0;
       text-align: center;
     }
     .choose-services-grandchild1{
@@ -528,12 +528,13 @@
     }
     .grand-child{
       width: 100%;
-      margin: 10px 20px;
+      margin: 10px 0;
       padding-right: 20px;
     }
     .grand-child div{
       width: 100%;
       text-align: left;
+      margin: 6px 0;
     }
     .grand-child h1{
       width: 60%;
