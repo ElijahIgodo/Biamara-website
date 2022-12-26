@@ -318,7 +318,336 @@
      }
     
   
+/*Let us create a section asking people to choose from services or courses*/
 
+  .choose-services-parent{
+    width: 100%;
+  }
+  .choose-services-parent img{
+    width: 100%;
+  }
+  .choose-services-child{
+    width: 100%;
+    background-color: rgb(124, 211, 233);
+    padding: 30px 5px;
+    text-align: center;
+  }
+  .grand-child{
+    width: 43%;
+    display: inline-block;
+    margin: 0 20px;
+  }
+  .grand-child h1{
+    width: 100%;
+    font-family: arial;
+    font-size: 40px;
+    font-style: italic;
+    color: rgb(66, 9, 119);
+    box-shadow: 0 0 20px;
+    margin-bottom: 15px;
+    padding: 5px 0;
+  }
+  .grand-child div{
+    width: 100%;
+    padding: 0px 0;
+    text-align: left;
+  }
+  .grand-child div a{
+    text-decoration: none;
+  }
+  .grand-child div:hover{
+    box-shadow:  0 0 30px rgb(56, 162, 189);
+  }
+  .grand-child div h3, .fa-choose{
+    display: inline-block;
+    padding: 0 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    color: rgb(116, 18, 116);
+  }
+  .grand-child div .fa-choose{
+    font-size: 35px;
+    color: rgb(66, 9, 119);
+  }
+  .choose-entity{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(11, 102, 46);
+    display: none;
+  }
+  .grand-child div:hover .choose-entity{
+    display: inline-block;
+    transition: 0.4s ease;
+  }
+
+  @media screen and (max-width: 1240px){
+    .grand-child{
+      width: 43%;
+      display: inline-block;
+      margin: 0 20px;
+    }
+    .grand-child h1{
+      width: 100%;
+      font-family: arial;
+      font-size: 30px;
+      font-style: italic;
+      color: rgb(66, 9, 119);
+      box-shadow: 0 0 20px;
+      margin-bottom: 15px;
+      padding: 5px 0;
+    }
+    .grand-child div{
+      width: 100%;
+      padding: 0px 0;
+      text-align: left;
+    }
+    .grand-child div a{
+      text-decoration: none;
+    }
+    .grand-child div:hover{
+      box-shadow:  0 0 30px rgb(56, 162, 189);
+    }
+    .grand-child div h3, .fa-choose{
+      display: inline-block;
+      padding: 0 8px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 20px;
+      color: rgb(116, 18, 116);
+    }
+    .grand-child div .fa-choose{
+      font-size: 30px;
+      color: rgb(66, 9, 119);
+    }
+    .choose-entity{
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(11, 102, 46);
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1005px){
+    .grand-child{
+      width: 100%;
+      display: block;
+      margin: 10px 20px;
+      text-align: center;
+    }
+    .choose-services-grandchild1{
+      margin-bottom: 50px;
+    }
+    .grand-child h1{
+      width: 60%;
+      font-family: arial;
+      font-size: 40px;
+      font-style: italic;
+      color: rgb(66, 9, 119);
+      box-shadow: 0 0 20px;
+      margin-bottom: 15px;
+      padding: 5px 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .grand-child div{
+      width: 80%;
+      padding: 0px 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .grand-child div a{
+      text-decoration: none;
+    }
+    .grand-child div:hover{
+      box-shadow:  0 0 30px rgb(56, 162, 189);
+    }
+    .grand-child div h3, .fa-choose{
+      display: inline-block;
+      padding: 0 8px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 25px;
+      color: rgb(116, 18, 116);
+    }
+    .grand-child div .fa-choose{
+      font-size: 35px;
+      color: rgb(66, 9, 119);
+    }
+    .choose-entity{
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(11, 102, 46);
+      display: none;
+    }
+  }
+  @media screen and (max-width: 675px){
+    .grand-child h1{
+      width: 60%;
+      font-family: arial;
+      font-size: 30px;
+      font-style: italic;
+      color: rgb(66, 9, 119);
+      box-shadow: 0 0 20px;
+      margin-bottom: 15px;
+      padding: 5px 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .grand-child div h3, .fa-choose{
+      display: inline-block;
+      padding: 0 8px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 20px;
+      color: rgb(116, 18, 116);
+    }
+    .grand-child div .fa-choose{
+      font-size: 30px;
+      color: rgb(66, 9, 119);
+    }
+    .choose-entity{
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(11, 102, 46);
+      display: none;
+    }
+  }
+  @media screen and (max-width: 545px){
+    .grand-child div{
+      width: 100%;
+      padding: 0px 0;
+      text-align: left;
+    }
+  }
+  @media screen and (max-width: 471px){
+    .choose-services-child{
+      width: 100%;
+      background-color: rgb(124, 211, 233);
+      padding: 30px 10px;
+      text-align: left;
+    }
+    .grand-child{
+      width: 100%;
+      margin: 10px 20px;
+      padding-right: 20px;
+    }
+    .grand-child div{
+      width: 100%;
+      text-align: left;
+    }
+    .grand-child h1{
+      width: 60%;
+      font-family: arial;
+      font-size: 25px;
+      font-style: italic;
+      color: rgb(66, 9, 119);
+      box-shadow: 0 0 20px;
+      margin-bottom: 15px;
+      padding: 5px 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .grand-child div h3, .fa-choose{
+      display: inline-block;
+      padding: 0 5px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 18px;
+      color: rgb(116, 18, 116);
+      margin-left: 0;
+      
+    }
+    .grand-child div .fa-choose{
+      font-size: 24px;
+      color: rgb(66, 9, 119);
+    }
+    .choose-entity{
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(11, 102, 46);
+      display: none;
+    }
+  }
+  @media screen and (max-width: 415px){
+    .grand-child h1{
+      width: 60%;
+      font-family: arial;
+      font-size: 20px;
+      font-style: italic;
+      color: rgb(66, 9, 119);
+      box-shadow: 0 0 20px;
+      margin-bottom: 15px;
+      padding: 5px 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .grand-child div h3, .fa-choose{
+      display: inline-block;
+      padding: 0 5px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 15px;
+      color: rgb(116, 18, 116);
+      margin-left: 0;
+      
+    }
+    .grand-child div .fa-choose{
+      font-size: 20px;
+      color: rgb(66, 9, 119);
+    }
+    .choose-entity{
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(11, 102, 46);
+      display: none;
+    }
+    .grand-child div:hover{
+      display: none;
+    }
+    .choose-services-grandchild1{
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 355px){
+    .grand-child h1{
+      width: 60%;
+      font-family: arial;
+      font-size: 6vw;
+      font-style: italic;
+      color: rgb(66, 9, 119);
+      box-shadow: 0 0 20px;
+      margin-bottom: 15px;
+      padding: 5px 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .grand-child div h3, .fa-choose{
+      display: inline-block;
+      padding: 0 5px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 4vw;
+      color: rgb(116, 18, 116);
+      margin-left: 0;
+      
+    }
+    .grand-child div .fa-choose{
+      font-size: 5vw;
+      color: rgb(66, 9, 119);
+    }
+    .choose-entity{
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(11, 102, 46);
+      display: none;
+    }
+    .grand-child div:hover{
+      display: none;
+    }
+    .choose-services-grandchild1{
+      margin-bottom: 50px;
+    }
+  }
 
 
 
