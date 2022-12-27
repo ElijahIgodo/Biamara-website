@@ -167,7 +167,167 @@
 
 
 
+/*We are now building our codelab*/
 
+    .codelab-intro-container{
+      width: 100%;
+      background-color: rgb(247, 247, 247);
+      padding: 20px;
+      text-align: center;
+    }
+    .codelab-intro-container > h1{
+      box-shadow: 0 0 10px rgb(209, 204, 204);
+      padding: 4px 20px;
+      margin: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .codelab-intro-container > p{
+      font-size: 20px;
+      text-align: left;
+    }
+    .codelab-intro-container > ul{
+      font-size: 20px;
+      text-align: left;
+      margin-left: 20px;
+    }
+    .codelab-intro-container > p > span{
+      border: solid 1px rgb(168, 168, 168);
+      padding: 4px 7px;
+      border-radius: 5px;
+      font-style: italic;
+      font-family: arial;
+      font-size: 16px;
+    }
+    .codelab-intro-container > .p-intro{
+      margin: 20px 0;
+    }
+    .codelab-intro-container > .note-p{
+      color: green;
+    }
+    .codelab-intro-container > .p-intro > button{
+      font-size: 17px;
+      background-color: black;
+      color: white;
+      padding: 0 8px;
+      border: none;
+      cursor: text;
+    }
+    .codelab-intro-container > img{
+      display: inline-block;
+      width: 250px;
+    }
+
+
+    /*Codelab design from Prism*/
+   
+    .code-toolbar > .toolbar > .toolbar-item > span {
+      top: -20px;
+      position: absolute;
+    }
+
+  .codebox > p{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .codebox .note{
+    font-family: arial;
+    font-weight: bold;
+  }
+  
+  .codebox > p > button{
+    border: none;
+    font-size: 18px;
+    cursor: text;
+  }
+    .codebox{
+      background: white;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .codebox div{
+      display: block;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    .codebox > .navbar-img{
+      width: 100%;
+    }
+
+
+    pre, code{
+      padding: 0px;
+      width: 100%;
+      overflow: auto;
+      scroll-behavior: smooth;
+      height: 300px;
+    }
+
+@media screen and (max-width: 660px){
+  .codelab-intro-container > p{
+    font-size: 18px;
+  }
+  .codelab-intro-container > .p-intro > button{
+    font-size: 15px;
+  }
+  .codelab-intro-container > p > span{
+    padding: 2px 7px;
+    font-size: 16px;
+  }
+  .codelab-intro-container > ul{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .codelab-intro-container > img{
+    width: 120px;
+  }
+}
+@media screen and (max-width: 360px){
+  .codelab-intro-container > h1{
+    box-shadow: 0 0 10px rgb(209, 204, 204);
+    padding: 4px 20px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+  }
+  .codelab-intro-container > p{
+    font-size: 16px;
+  }
+  .codelab-intro-container > .p-intro > button{
+    font-size: 13px;
+  }
+  .codelab-intro-container > p > span{
+    padding: 1px 7px;
+    font-size: 14px;
+  }
+  .codelab-intro-container > ul{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .codelab-intro-container > img{
+    width: 120px;
+  }
+  .codebox > p{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .codebox .note{
+    font-size: 14px;
+  }
+  
+  .codebox > p > button{
+    font-size: 16px;
+    padding: 0 5px;
+  }
+}
 
 
 
