@@ -86,7 +86,237 @@
 
 
 
+<!--We are now building our codelab-->
 
+<div class="codelab-intro-container">
+  <h1>Learn how to build a website</h1>
+  <p>Have you ever wondered how all these big company's websites like <i><b>Google.com,</b></i> <i><b>Facebook.com,</b></i>
+   <i><b>Youtube.com,</b></i> <i><b>Amazon.com,</b></i> and the rest of them were built? They obviously did not fall from the sky,
+  someone sat down and built them with the same computer that you and I are using everyday. And these people happen to be among
+  the world's richest billionairs today. You too can be among them, it's just a determination. In this tutorial, you are going to learn 
+    how to build a website from scratch, it does not require you to have previous experience in programming, 
+  but if you can read this to the end carefully, I assure you that you will then gain at least a basic knowledge
+  in web development. However, it is not going to be as easy as reading A B C D, but it is 100 percent possible
+  to become a perfect developer within six months, it only requires your attention and interest
+  by making <i><b>coding</b></i> a hobby, that's all.<br><br> A functioning website is constructed with multiple
+machine or code languages, but we will be using the three most
+used languages, <span>HTML</span> <span>CSS</span> and 
+<span>JavaScript</span> which you must learn in order to have their
+basic knowledge as a beiginer before we move on to other laguages.</p>
+<p class="p-intro"><span>HTML</span> This stands for "Hypertext Markup Language", 
+this is used to build the srtucturer of web pages. It has elements, attributes,
+tags, entities, etc. Think of HTML as the carpenter and the brick-layer who build a house 
+from the foundation to the roofing level without any special design, no one can move in 
+to that house like that.</p>
+<p class="p-intro"><span>CSS</span> This stands for "Cascading Style Sheet", you are now
+going to think of CSS as the tiler and the painter who design and beautify the
+house. However, the house is not lively yet but one can still move in, in that current state.
+Which simply means, after the work of CSS in the website, it could be published online and be visited
+by users, just for reading blog posts.</p>
+<p class="p-intro"><span>JavaScript</span> Finally, you can now think of JavaScript as the Plumber and Electrician
+who make things happen in the house. A plumber connects every pipe to make sure that there is running water, the electrician does
+his own job to make things function. JavaScript does the same thing in a website, it is a 
+programming language that makes a website interactive.</p>
+<p class="p-intro">Now that you have understood the role that <i><b>HTML</b></i>, <i><b>CSS</b></i>, and 
+<i><b>JavaScript</b></i> play in web development, we are now going start, but before we begin, there are three tools that we will be working with. <button>The computer</button> 
+  <button>The code editor</button> and <button>The browser</button>.</p>
+  <img src="CodeImages/codeComputer.png" alt="Computer">
+  <img src="CodeImages/editorBrowser.png" alt="Editor & Browser">
+  <p>The code editor is where you will write your codes which will be installed on the computer, then, we use the browser to taste our work.
+There are numerous code editors out there, but I would suggest you go for <i><b>Visual Studio Code (VS Code),</b></i>
+for it is user friendly in programming, especially for beginners. Here is the link to download one, <a href="https://code.visualstudio.com/">VS Code Editor.</a>
+You can also download <i><b>Google Chrome Browser</b></i> here, <a href="https://www.google.com/chrome/">Google Chrome.</a> These are the tools
+that I would recommend you to use as a new programmer.</p>
+<p class="p-intro">Alright, now that we have all the required tools at our disposal, we can now start building our new website. Let's take these few steps first.</p>
+<ul>
+   <li>Create a folder on your computer, you can name it anything</li>
+   <li>Inside the folder you've created, create a file with a HTML extension, example: <b>myfirstwebsite.html</b></li>
+   <li>Create another file with a CSS extension, example: <b>myfirstwebsite.css</b></li>
+   <li>Lastly, create another file with a JavaScript extension, example: <b>myfirstwebsite.js</b></li>
+</ul>
+   <p class="note-p">Feel free to use any word or name you like, what really matters is the extension, that is how the computer will understand which language it is before processing it.</p>
+<ul>
+    <li>Open the code editor that you have downloaded, click on the icon <i><b>explorer,</b></i></li> from there you can open the folder you created, inside the folder 
+  you will find all your files. open the <b>HTML,</b> that is where we are going to start from.
+</ul>
+</div>
+
+
+<div class="codebox">
+
+  <p><span class="note">NOTE:</span> You must structure your HTML code like the one shown here with these default codes before you proceed. 
+  The default codes will show up immediately when you type <b>!</b> and press <i><b>enter. </b></i> 
+link your CSS file inside the &lt;head&gt; tag the way it shows on my editor, mine is <b>Code-lesson.css,</b> you can see it there.</p>
+<p>When you're building a website, the first thing you should build is the <button>Navigation bar</button>.
+  So, let us build a navigation bar, using HTML and CSS.</p>
+
+  <div class="htlm-code">
+    <pre class="line-numbers">
+     <code class="language-html">
+       
+     &lt;!DOCTYPE html&gt;
+     &lt;html lang=&quot;en&quot;&gt;
+       &lt;head&gt;
+         &lt;meta charset=&quot;UTF-8&quot;&gt;
+         &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+         &lt;title&gt;Code lessons&lt;/title&gt;
+         &lt;link rel=&quot;stylesheet&quot; href=&quot;Code-lesson.css&quot;&gt;
+       &lt;/head&gt;
+       &lt;body&gt;
+  
+         &lt;!--Write your HTML codes here, within the 'body' tag--&gt; 
+
+       &lt;/body&gt;
+    &lt;/html&gt;
+ 
+     </code> 
+   </pre>
+ </div>
+
+ <p>We are now creating the navigation bar with four options, each option means a different web page. The rule of HTML is to always use 
+  an <b>open</b> and a <b>close</b> tag like this: <b>&lt;opentag&gt; &lt;/closetag&gt;.</b> There numerous HTML tags, but later in this
+  lesson you will learn some of them and their uses.
+ </p>
+ <p>You have noticed that we used a <b>nav</b> tag, that is the container in which the <b>h1</b> tag is written, we use 'h1' to write titles on websites.
+ Inside the nav tag we also have a <b>ul</b> tag
+which stands for <i><b>Under Lists,</b></i> in which we wrote the <b>li</b> tag, that is the lists of the menu options.
+The <b>&lt;a href=" "&gt;</b> is the anchor or hyperlink tag that links to anonther page or website. within the double quote is where
+website or page addresses are placed, I put <b>#</b> for now.</p>
+<p>You have also noticed that inside the <b>nav</b> tag we have a class name <i><b>nav-bar.</b></i> written in this format <b>&lt;nav class="nav-bar"&gt;.</b>
+The class name is what we are going to be using as a target when styling it with CSS, a well built website
+must have many sections with different designs, therefore, a class name or Id name is what tells CSS exactly what to design. Feel free to use any name!</p>
+
+ <div class="htlm-code" id="coder">
+  <pre class="line-numbers">
+   <code class="language-html">
+     
+   &lt;body&gt;
+    &lt;nav class=&quot;nav-bar&quot;&gt;
+       &lt;h1&gt;LOGO&lt;/h1&gt;
+       &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+    &lt;/nav&gt; 
+   &lt;/body&gt;
+
+   </code> 
+ </pre>
+</div>
+
+<p>if you run this codes on your browser, this is what it will look like, we have structured
+the <button>navigation bar</button> with HTML but it's not normal because we've not applied any design yet.
+Now we are going to design it by targeting our class name <i><b>nav-bar</b></i> in CSS.</p>
+<img src="CodeImages/navbar-1.jpg">
+<hr>
+<br>
+<p>CSS normally uses a HTML class or Id name to design a particular section of the website.
+  It uses a dot <b>'•'</b> in front of the class name like this: <b>.nav-bar</b> and uses <b>'#'</b> for Id name
+like this: <b>#nav-bar,</b> then followed by open and close curly braces <b>{ }</b> in which you will write your codes.</p>
+
+  <div class="css-code">
+   <pre class="line-numbers">
+     <code class="language-css">
+     /*In this code, we targeted our class name 'nav-bar' with a dot infront of it,
+             but we did not put anything infront of the the 'body' tag because
+             it is neither a class nor Id, it is just a direct tag.*/
+      
+       
+     body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .nav-bar {
+      width: 100%;
+      margin: 0;
+    }
+    
+    .nav-bar > h1 {
+      position: absolute;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      padding-left: 80px;
+    }
+    
+    .nav-bar > ul {
+      display: flex;
+      margin: 0;
+      width: 100%;
+      height: 70px;
+      justify-content: right;
+      background-color: rgb(39, 112, 112);
+    }
+    
+    .nav-bar > ul > li {
+     list-style: none;
+     line-height: 60px;
+     font-size: 20px;
+     padding: 0 10px;
+     position: relative;
+     right: 100px;
+    }
+
+     </code> 
+   </pre>
+</div>
+<p>This is how our <button>Navigation bar</button> now looks after we have applied some CSS styles.
+  The <b>body</b> is the body of the web page, in which everything on the page is placed. We used <b>'margin 0'</b>
+  because we want our web page to have full-width, while <b>'padding 0'</b> tells it not to adjust any element within
+  the page, unless we apply that directly from the element itself. The 'box-sizing' defines how the width and height
+  of an element are calculated, therefore, the value <b>'border-box'</b> adds extra border and padding to the width and height
+  of any box element that could be created.
+</p>
+<img class="navbar-img" src="CodeImages/navbar-2.jpg" alt="Navigation bar">
+<p>Let us now change the hyperlinks color and remove the underlines. Attention please! whenever you see something like this
+  <b>.nav-bar > ul > li > a { }</b>, it means that your main target here is the <b>a</b>
+  tag, we are trying to tell CSS that the 'a' is inside the <b>li</b> tag, while the 'li'
+  is inside the <b>ul</b> tag, and the 'ul' is the child of our main target <b>.nav-bar.</b>
+  The reason is because there may be many <b>a</b> tags in different pages or sections of your website, if you don't tell CSS
+  the exact target, it will style all the 'a' on your site, and you should know, this hyperlink 'a' also appears in the footer section
+  of every website, which we will be creating next. Let's move on!
+</p>
+<div class="css-code">
+  <pre class="line-numbers">
+    <code class="language-css">
+    /*We simply changed the link coror, font size, and apply a hover effect.*/
+
+   
+    .nav-bar > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+   }
+   
+   .nav-bar > ul > li > a:hover {
+    color: yellow;
+    transition: 0.4s;
+   }
+
+    </code> 
+  </pre>
+</div>
+<!--<img class="navbar-img" src="CodeImages/navbar-3.jpg" alt="Navigation bar">-->
+<video controls loop width="100%" autoplay>
+  <source src="CodeImages/navvid-1.mp4" type="video/mp4">
+</video>
+<p>A <i><b>:hover</b></i> effect and the rest of them are known as <b>CSS pseudo classes,</b>
+they are keywords added after a HTML class/Id name, or tags to specify a special state of that very
+selector. Remember, tags, classes or Id names are also called 'selectors' in CSS, so, don't think of that
+as something else. We added a 'hover' to our <b>a</b> tag/selector, and we applied yellow color to it
+so that when someone hovers their mouse on the links, the action will take effect. The 'transition' is set
+0.4seconds, it makes the hover effect not to act abruptly, but in a cool manner. Don't worry, you will learn
+how these things works as we move on to the next step.</p>
+<p>We have successfully created our <button>Navigation bar</button>, if you are reading this now
+  it means that you have been following this tutorial step by step, so, I must congratulate you
+  for haven learned how to build a navigation bar using HTML and CSS.</p>
+</div>
 
 
 
