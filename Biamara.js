@@ -506,3 +506,40 @@ let loveRate = document.getElementById("heart");
  });
 
  
+
+
+
+//Let us program our contact form here.
+
+
+  function btncontact (){
+    const contscc = document.getElementById("msg2-div");
+    contscc.style.display = 'flex';
+    contscc.style.backgroundColor = 'black';
+    contscc.style.boxShadow = '0 0 30px grey';
+  }
+
+  
+  function exitbtn (){
+    let exit = document.getElementById("contact-success-msg")
+    exit.style.display = 'none';
+    let stopexit1 = document.getElementById("stopexit")
+    stopexit1.style.display = 'none';
+}
+
+function checkform()
+    {
+        var f = document.forms["theform"].elements;
+        var cansubmit = true;
+
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) cansubmit = false;
+        }
+
+        if (cansubmit) {
+            document.getElementById('btncontact1').disabled = false;
+        }
+        else {
+          document.getElementById('btncontact1').disabled = "disabled";
+        }
+    }
