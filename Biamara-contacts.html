@@ -82,6 +82,11 @@
 
 
   <!--This is our contact form-->
+<div class="msg-div" id="msg2-div">
+    <i class="textbtn fa-solid fa-xmark" onclick="exitbtn()" id="stopexit"></i>
+    <p class="cont-scc-msg" id="contact-success-msg">Thank you for contacting us, 
+      one of our team members will get back to you as soon as possible.</p>
+  </div>
 
   <section class="section-container">
 
@@ -94,7 +99,7 @@
         </li>
         <li>
           <i class="contact-icon fa-solid fa-envelope"></i><span>Email:</span>
-          <a href="mailto:info@biamara.com">info@biamara.org</a>
+          <a href="mailto:info@biamara.org">info@biamara.org</a>
         </li>
         <li>
           <i class="contact-icon fa-solid fa-globe"></i><span>Website:</span>
@@ -117,14 +122,19 @@
 
   <div class="contact-form-wrapper wrapper">
     <h1>Send us a message</h1>
-     <form>
+     <form name="theform">
         <label class="label-for-input" for="text">Name</label>
-        <input type="text" placeholder="Godwin Elijah"><br>
+        <input id="firstName" type="text" onKeyup="checkform()" placeholder="Godwin Elijah">
+        <br>
+
         <label class="label-for-input" for="email">Email</label>
-        <input type="email" placeholder="Example@gmail.com"><br>
+        <input id="emailText" type="email" onKeyup="checkform()" placeholder="Example@gmail.com">
+        <br>
+
         <label class="label-for-textarea" for="textarea">Your message</label>
-        <textarea cols="30" rows="3" placeholder="Message"></textarea>
-        <button type="submit">submit</button>
+        <textarea id="textareaText" cols="30" rows="3" onKeyup="checkform()" placeholder="Message"></textarea>
+
+        <input class="form-sub-btn" id="btncontact1" type="submit" value="Submit" onclick="btncontact()" disabled="disabled">
      </form>
   </div>
 
