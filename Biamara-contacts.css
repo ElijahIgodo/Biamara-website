@@ -264,23 +264,7 @@
       margin-left: auto;
       margin-right: auto;
      }
-    .contact-form-wrapper form button{
-      display: block;
-      width: 25.5vw;
-      height: 40px;
-      margin-top: 30px;
-      margin-bottom: 20px;
-      margin-right: auto;
-      margin-left: auto;
-      border: none;
-      background-color: black;
-      color: white;
-      border-radius: 6px;
-      font-size: 20px;
-     }
-     .contact-form-wrapper form button:hover{
-      background-color: rgb(218, 98, 0);;
-     }
+    
      .contact-form-wrapper form input{
       height: 30px;
 
@@ -289,6 +273,167 @@
       font-weight: bold;
       margin-bottom: 40px;
       border-bottom: groove;
+     }
+     .contact-form-wrapper form .form-sub-btn{
+      width: 25.5vw;
+      height: 40px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-right: auto;
+      margin-left: auto;
+      border: none;
+      color: black;
+      border-radius: 6px;
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 5px;
+     }
+     .cont-scc-msg{
+      color: yellow;
+      width: 85%;
+      padding: 15px 20px;
+      font-size: 18px;
+      display: inline-block;
+      position: relative;
+     }
+     .textbtn{
+      width: 8%;
+      font-size: 25px;
+      color: red;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+     }
+     .textbtn:hover{
+      color: yellow;
+     }
+     .msg-div{
+      position: absolute;
+      display: none;
+      background-color: black;
+      width: 600px;
+      border-top-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      text-align: center;
+      left: 200px;
+      top: 120px;
+     }
+
+     @media screen and (max-width: 1018px){
+      .cont-scc-msg{
+        color: yellow;
+        width: 85%;
+        padding: 15px 20px;
+        font-size: 18px;
+        display: inline-block;
+        position: relative;
+       }
+       .textbtn{
+        width: 8%;
+        font-size: 25px;
+        color: red;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+       }
+       .textbtn:hover{
+        color: yellow;
+       }
+       .msg-div{
+        position: absolute;
+        display: none;
+        background-color: black;
+        width: 600px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        text-align: center;
+        left: 50px;
+        top: 200px;
+       }
+     }
+     @media screen and (max-width: 700px){
+      .msg-div{
+        position: absolute;
+        display: none;
+        background-color: black;
+        width: 300px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        text-align: center;
+        left: 50px;
+        top: 200px;
+       }
+       .cont-scc-msg{
+        color: yellow;
+        width: 85%;
+        padding: 15px 15px;
+        font-size: 16px;
+        display: inline-block;
+        position: relative;
+       }
+     }
+     @media screen and (max-width: 552px){
+      .msg-div{
+        position: absolute;
+        display: none;
+        background-color: black;
+        width: 300px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        text-align: center;
+        left: 50px;
+        top: 200px;
+       }
+       .cont-scc-msg{
+        color: yellow;
+        width: 85%;
+        padding: 15px 15px;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+       }
+     }
+     @media screen and (max-width: 403px){
+      .msg-div{
+        position: absolute;
+        display: none;
+        background-color: black;
+        width: 300px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        text-align: center;
+        left: 20px;
+        top: 200px;
+       }
+       .cont-scc-msg{
+        color: yellow;
+        width: 85%;
+        padding: 14px 15px;
+        font-size: 16px;
+        display: inline-block;
+        position: relative;
+       }
+     }
+     @media screen and (max-width: 343px){
+      .msg-div{
+        position: absolute;
+        display: none;
+        background-color: black;
+        width: 80vw;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        text-align: center;
+        left: 20px;
+        top: 200px;
+       }
+       .cont-scc-msg{
+        color: yellow;
+        width: 85%;
+        padding: 14px 15px;
+        font-size: 13px;
+        display: inline-block;
+        position: relative;
+       }
      }
   
 
@@ -1358,23 +1503,7 @@ form.in-search .in-search-btn {
     margin-left: auto;
     margin-right: auto;
    }
-  .contact-form-wrapper form button{
-    display: block;
-    width: 125px;
-    height: 40px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 6px;
-    font-size: 20px;
-   }
-   .contact-form-wrapper form button:hover{
-    background-color: rgb(218, 98, 0);;
-   }
+  
    .contact-form-wrapper form input{
     height: 30px;
 
@@ -1426,7 +1555,7 @@ form.in-search .in-search-btn {
     margin-left: auto;
     margin-right: auto;
    }
-  .contact-form-wrapper form button{
+  .contact-form-wrapper form .form-sub-btn{
     display: block;
     width: 120px;
     height: 40px;
@@ -1435,14 +1564,10 @@ form.in-search .in-search-btn {
     margin-right: auto;
     margin-left: auto;
     border: none;
-    background-color: black;
-    color: white;
     border-radius: 6px;
     font-size: 18px;
    }
-   .contact-form-wrapper form button:hover{
-    background-color: rgb(218, 98, 0);;
-   }
+  
    .contact-form-wrapper form input{
     height: 30px;
 
@@ -1492,23 +1617,7 @@ form.in-search .in-search-btn {
     margin-left: auto;
     margin-right: auto;
    }
-  .contact-form-wrapper form button{
-    display: block;
-    width: 120px;
-    height: 40px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 6px;
-    font-size: 18px;
-   }
-   .contact-form-wrapper form button:hover{
-    background-color: rgb(218, 98, 0);;
-   }
+
    .contact-form-wrapper form input{
     height: 30px;
 
@@ -1520,3 +1629,10 @@ form.in-search .in-search-btn {
     font-size: 5vw;
    }
 }
+@media screen and (max-width: 288px){
+  .contact-form-wrapper{
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+ }
