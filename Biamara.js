@@ -525,7 +525,6 @@ let loveRate = document.getElementById("heart");
     exit.style.display = 'none';
     let stopexit1 = document.getElementById("stopexit")
     stopexit1.style.display = 'none';
-    window.alert("Thank you for contacting us! One of our team members will get in touch with you shortly.")
 }
 
 function checkform()
