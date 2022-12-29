@@ -163,23 +163,21 @@ link your CSS file inside the &lt;head&gt; tag the way it shows on my editor, mi
   <div class="htlm-code">
     <pre class="line">
      <code class="language-html">
-       
-     &lt;!DOCTYPE html&gt;
-     &lt;html lang=&quot;en&quot;&gt;
-       &lt;head&gt;
-         &lt;meta charset=&quot;UTF-8&quot;&gt;
-         &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-         &lt;title&gt;Code lessons&lt;/title&gt;
-         &lt;link rel=&quot;stylesheet&quot; href=&quot;Code-lesson.css&quot;&gt;
-       &lt;/head&gt;
-       &lt;body&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Code lessons&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;Code-lesson.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
   
-         &lt;!--Write your HTML codes here, within the 'body' tag--&gt; 
+      &lt;!--Write your HTML codes here, within the 'body' tag--&gt; 
 
-       &lt;/body&gt;
-    &lt;/html&gt;
- 
+    &lt;/body&gt;
+&lt;/html&gt;
      </code> 
    </pre>
  </div>
@@ -200,19 +198,17 @@ must have many sections with different designs, therefore, a class name or Id na
  <div class="htlm-code" id="coder">
   <pre class="line">
    <code class="language-html">
-     
-   &lt;body&gt;
-    &lt;nav class=&quot;nav-bar&quot;&gt;
-       &lt;h1&gt;LOGO&lt;/h1&gt;
-       &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-    &lt;/nav&gt; 
-   &lt;/body&gt;
-
+&lt;body&gt;
+  &lt;nav class=&quot;nav-bar&quot;&gt;
+    &lt;h1&gt;LOGO&lt;/h1&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/nav&gt; 
+&lt;/body&gt;
    </code> 
  </pre>
 </div>
@@ -230,47 +226,46 @@ like this: <b>#nav-bar,</b> then followed by open and close curly braces <b>{ }<
   <div class="css-code">
    <pre class="line">
      <code class="language-css">
-     /*In this code, we targeted our class name 'nav-bar' with a dot infront of it,
-             but we did not put anything infront of the the 'body' tag because
-             it is neither a class nor Id, it is just a direct tag.*/
+/* In this code, we targeted our class name 'nav-bar' with a dot infront of it,
+  but we did not put anything infront of the the 'body' tag because
+  it is neither a class nor Id, it is just a direct tag. */
       
        
-     body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
     
-    .nav-bar {
-      width: 100%;
-      margin: 0;
-    }
+.nav-bar {
+  width: 100%;
+  margin: 0;
+}
     
-    .nav-bar > h1 {
-      position: absolute;
-      font-family: Arial, Helvetica, sans-serif;
-      color: white;
-      padding-left: 80px;
-    }
+.nav-bar > h1 {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding-left: 80px;
+}
     
-    .nav-bar > ul {
-      display: flex;
-      margin: 0;
-      width: 100%;
-      height: 70px;
-      justify-content: right;
-      background-color: rgb(39, 112, 112);
-    }
+.nav-bar > ul {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 70px;
+  justify-content: right;
+  background-color: rgb(39, 112, 112);
+}
     
-    .nav-bar > ul > li {
-     list-style: none;
-     line-height: 60px;
-     font-size: 20px;
-     padding: 0 10px;
-     position: relative;
-     right: 100px;
-    }
-
+.nav-bar > ul > li {
+  list-style: none;
+  line-height: 60px;
+  font-size: 20px;
+  padding: 0 10px;
+  position: relative;
+ right: 100px;
+}
      </code> 
    </pre>
 </div>
@@ -293,22 +288,21 @@ like this: <b>#nav-bar,</b> then followed by open and close curly braces <b>{ }<
 <div class="css-code">
   <pre class="line">
     <code class="language-css">
-    /*We simply changed the link coror, font size, and apply a hover effect.*/
+/* We simply changed the link coror, font size, and apply a hover effect.*/
 
    
-    .nav-bar > ul > li > a {
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
-   }
+.nav-bar > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
    
-   .nav-bar > ul > li > a:hover {
-    color: yellow;
-    transition: 0.4s;
-   }
-
+.nav-bar > ul > li > a:hover {
+  color: yellow;
+  transition: 0.4s;
+}
     </code> 
   </pre>
 </div>
