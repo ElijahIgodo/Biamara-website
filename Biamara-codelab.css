@@ -733,6 +733,7 @@ hr {
   left: -100%;
   transition: 0.6s ease;
   overflow: auto;
+  z-index: 9;
 }
 .navbar .navul .navli{
   display: block;
