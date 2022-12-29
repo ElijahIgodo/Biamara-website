@@ -227,7 +227,7 @@
       color: silver;
     }
     
-    .sidebarexit-icon{
+    #sidebarexit-icon2{
       position: absolute;
       top: 49px;
       font-size: 30px;
@@ -237,7 +237,7 @@
       display: none;
       right: 0;
     }
-    .sidebarexit-icon:hover{
+    #sidebarexit-icon2:hover{
       color: silver;
     }
 
