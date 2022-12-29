@@ -543,3 +543,29 @@ function checkform()
           document.getElementById('btncontact1').disabled = "disabled";
         }
     }
+
+
+//Let us now program our codelab contents
+
+
+function menushowicon (){
+ let sideHidden = document.getElementById("side-bar2");
+  sideHidden.style.left = '0';
+ sideHidden.style.overflow = 'hidden';
+  let showHidden = document.getElementById("sidebarmenu-icon2");
+  showHidden.style.display = 'none';
+  let exitHidden = document.getElementById("sidebarexit-icon2");
+  exitHidden.style.display = 'block';
+}
+
+function menuexiticon (){
+  let sideHidden2 = document.getElementById("side-bar2");
+  sideHidden2.style.left = '-265px';
+  let showHidden2 = document.getElementById("sidebarmenu-icon2");
+  showHidden2.style.display = 'block';
+  let exitHidden2 = document.getElementById("sidebarexit-icon2");
+  exitHidden2.style.display = 'none';
+  let slideUl = document.getElementById("slide-ul-list");
+  slideUl.style.overflow = 'hidden';
+}
+
