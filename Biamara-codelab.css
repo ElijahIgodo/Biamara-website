@@ -162,7 +162,113 @@
 
 
 
+/*Let us build a sidebar navigation*/
 
+
+    .aside-bar{
+      background-color: rgb(146, 36, 9);
+      margin-top: px;
+      width: 280px;
+      text-align: center;
+      z-index: 2;
+      transition: all 1s;
+      position: absolute;
+      left: -265px;
+    }
+    .aside-bar > h1{
+      top: 43px;
+      padding-bottom: 8px;
+      border-bottom: groove 1px;
+      color: white;
+      overflow-x: hidden;
+      position: relative;
+      transition: all 1s;
+      width: 100%;
+    }
+    .topic-list{
+      width: 100%;
+      height: 100vh;
+      padding: 20px;
+      text-align: start;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      transition: all 1s;
+      margin-top: 90px;
+      direction: rtl;
+    }
+  
+    .topic-list > ul > li{
+      margin-left: 10px;
+      padding: 6px;
+      color: white;
+      list-style: none;
+      text-align: left;
+    }
+    
+    .topic-list > ul > li > a{
+      text-decoration: none;
+      font-size: 16px;
+      color: white;
+    }
+    .topic-list > ul > li > a:hover{
+      color: yellow;
+    }
+
+    .sidebarmenu-icon{
+      position: absolute;
+      top: 50px;
+      font-size: 25px;
+      color: white;
+      z-index: 3;
+      transition: all 1s;
+      right: 0;
+    }
+    .sidebarmenu-icon:hover{
+      color: silver;
+    }
+    
+    .sidebarexit-icon{
+      position: absolute;
+      top: 49px;
+      font-size: 30px;
+      color: white;
+      z-index: 3;
+      transition: all 1s;
+      display: none;
+      right: 0;
+    }
+    .sidebarexit-icon:hover{
+      color: silver;
+    }
+
+    @media screen and (max-width: 801px){
+      .aside-bar{
+        background-color: rgb(146, 36, 9);
+        margin-top: px;
+        width: 280px;
+        text-align: center;
+        z-index: 2;
+        transition: all 1s;
+        position: absolute;
+        left: -265px;
+      }
+      .aside-bar > h1{
+        top: 43px;
+        padding-bottom: 8px;
+        border-bottom: groove 1px;
+        color: white;
+        overflow-x: hidden;
+        position: relative;
+        transition: all 1s;
+        width: 100%;
+        font-size: 20px;
+      }
+      .topic-list > ul > li > a{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+      }
+    }
 
 
 
@@ -173,6 +279,7 @@
       width: 100%;
       background-color: white;
       padding: 20px;
+      padding-left: 30px;
       text-align: center;
     }
     .codelab-intro-container > h1{
@@ -224,6 +331,7 @@
    
     .code-toolbar > .toolbar > .toolbar-item > span {
       top: -20px;
+      right: 20px;
       position: absolute;
     }
 
