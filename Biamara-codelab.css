@@ -266,6 +266,10 @@
       scroll-behavior: smooth;
       height: 300px;
     }
+   pre{
+      padding: 0;
+      margin: 0;
+    }
 
 @media screen and (max-width: 660px){
   .codelab-intro-container > p{
@@ -285,6 +289,9 @@
   }
   .codelab-intro-container > img{
     width: 120px;
+  }
+  pre, code{
+    height: auto;
   }
 }
 @media screen and (max-width: 360px){
