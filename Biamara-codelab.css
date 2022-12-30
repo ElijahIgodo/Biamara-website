@@ -211,7 +211,7 @@ html{
     }
     .topic-list > ul{
       border-radius: 10px;
-      box-shadow: 0 0 40px;
+      box-shadow: 0 0 40px rgb(88, 22, 5);
     }
     .topic-list > ul > h2{
       width: 100%;
