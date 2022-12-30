@@ -164,6 +164,10 @@
 
 /*Let us build a sidebar navigation*/
 
+    
+html{
+      scroll-behavior: smooth;
+    }
 
     .aside-bar{
       background-color: rgb(146, 36, 9);
@@ -171,7 +175,7 @@
       width: 280px;
       text-align: center;
       z-index: 2;
-      transition: all 1s;
+      transition: all 0.5s;
       position: absolute;
       left: -265px;
     }
