@@ -354,6 +354,7 @@ html{
   .codebox > p{
     font-size: 18px;
     margin-bottom: 10px;
+    text-align: left;
   }
   .codebox .note{
     font-family: arial;
