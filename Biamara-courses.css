@@ -551,7 +551,28 @@ hr {
   transition: 0.1s;
 }
 
+/*Creating the top arrow*/
 
+#top-arrow{
+  font-size: 20px;
+  padding: 8px 5px;
+}
+#top-arrow:hover{
+  color: red;
+}
+
+.top-arrow-div{
+ position: absolute;
+ right: 20px;
+ border: solid 1px;
+ border-radius: 5px;
+}
+.top-arrow-div:hover{
+  border: solid 1px red;
+}
+.top-arrow-div > a{
+  text-decoration: none;
+}
 
 
 /*responsive for navition bar*/
