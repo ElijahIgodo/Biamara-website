@@ -355,6 +355,7 @@ html{
     font-size: 18px;
     margin-bottom: 10px;
     text-align: left;
+    padding: 5px 0;
   }
   .codebox .note{
     font-family: arial;
@@ -365,6 +366,7 @@ html{
     border: none;
     font-size: 18px;
     cursor: text;
+    padding: 0 5px;
   }
     .codebox{
       background: white;
