@@ -175,7 +175,7 @@ html{
       width: 280px;
       text-align: center;
       z-index: 2;
-      transition: all 0.5s;
+      transition: all 0.40s;
       position: absolute;
       left: -265px;
     }
