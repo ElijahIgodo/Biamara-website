@@ -226,6 +226,7 @@ html{
       z-index: 3;
       transition: all 1s;
       right: 0;
+      cursor: pointer;
     }
     .sidebarmenu-icon:hover{
       color: silver;
@@ -240,6 +241,7 @@ html{
       transition: all 1s;
       display: none;
       right: 0;
+      cursor: pointer;
     }
     #sidebarexit-icon2:hover{
       color: silver;
