@@ -233,15 +233,15 @@ link your CSS file inside the &lt;head&gt; tag the way it shows on my editor, mi
  </div>
 
  <p>We are now creating the navigation bar with four options, each option means a different web page. The rule of HTML is to always use 
-  an <b>open</b> and a <b>close</b> tag like this: <b>&lt;opentag&gt; &lt;/closetag&gt;.</b> There are numerous HTML tags, but later in this
+  an <b>open</b> and a <b>close</b> tag like this: &lt;opentag&gt; &lt;/closetag&gt;. There are numerous HTML tags, but later in this
   lesson you will learn some of them and their uses.
  </p>
- <p>You have noticed that we used a <b>nav</b> tag, that is the container in which the <b>h1</b> tag is written, we use 'h1' to write titles on websites.
- Inside the nav tag we also have a <b>ul</b> tag
-which stands for <i><b>Under Lists,</b></i> in which we wrote the <b>li</b> tag, that is the lists of the menu options.
-The <b>&lt;a href=" "&gt;</b> is the anchor or hyperlink tag that links to anonther page or website. within the double quote is where
+ <p>You have noticed that we used a &lt;nav&gt; tag, that is the container in which the &lt;h1&gt; tag is written, we use 'h1' to write titles on websites.
+ Inside the &lt;nav&gt; tag we also have a &lt;ul&gt; tag
+which stands for <i><b>Unordered Lists,</b></i> in which we wrote the &lt;li&gt; tag, that is the lists of the menu options.
+The &lt;a&gt; is the anchor or hyperlink tag that links to anonther page or website, it has the attribute <b>href=" "</b>, inside which it has two double quotes where
 website or page addresses are placed, I put <b>#</b> for now.</p>
-<p>You have also noticed that inside the <b>nav</b> tag we have a class name <i><b>nav-bar.</b></i> written in this format <b>&lt;nav class="nav-bar"&gt;.</b>
+<p>You have also noticed that inside the &lt;nav&gt; tag we have a class name <i><b>nav-bar.</b></i> written in this format <b>&lt;nav class="nav-bar"&gt;.</b>
 The class name is what we are going to be using as a target when styling it with CSS, a well built website
 must have many sections with different designs, therefore, a class name or Id name is what tells CSS exactly what to design. Feel free to use any name!</p>
 
@@ -328,10 +328,10 @@ body {
 </p>
 <img class="navbar-img" src="CodeImages/navbar-2.jpg" alt="Navigation bar">
 <p>Let us now change the hyperlinks color and remove the underlines. Attention please! whenever you see something like this
-  <b>.nav-bar > ul > li > a { }</b>, it means that your main target here is the <b>a</b>
-  tag, we are trying to tell CSS that the 'a' is inside the <b>li</b> tag, while the 'li'
-  is inside the <b>ul</b> tag, and the 'ul' is the child of our main target <b>.nav-bar.</b>
-  The reason is because there may be many <b>a</b> tags in different pages or sections of your website, if you don't tell CSS
+  <b>.nav-bar > ul > li > a { }</b>, it means that your main target here is the &lt;a&gt;
+  tag, we are trying to tell CSS that the 'a' is inside the &lt;li&gt; tag, while the 'li'
+  is inside the &lt;ul&gt; tag, and the 'ul' is the child of our main target <b>.nav-bar.</b>
+  The reason is because there may be many &lt;&gt; tags in different pages or sections of your website, if you don't tell CSS
   the exact target, it will style all the 'a' on your site, and you should know, this hyperlink 'a' also appears in the footer section
   of every website, which we will be creating next. Let's move on!
 </p>
@@ -364,7 +364,7 @@ body {
 <p>A <i><b>:hover</b></i> effect and the rest of them are known as <b>CSS pseudo classes,</b>
 they are keywords added after a HTML class/Id name, or tags to specify a special state of that very
 selector. Remember, tags, classes or Id names are also called 'selectors' in CSS, so, don't think of that
-as something else. We added a 'hover' to our <b>a</b> tag/selector, and we applied yellow color to it
+as something else. We added a 'hover' to our &lt;a&gt; tag/selector, and we applied yellow color to it
 so that when someone hovers their mouse on the links, the action will take effect. The 'transition' is set
 0.4seconds, it makes the hover effect not to act abruptly, but in a cool manner. Don't worry, you will learn
 how these things works as we move on to the next step.</p>
