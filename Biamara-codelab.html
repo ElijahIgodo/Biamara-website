@@ -101,7 +101,7 @@
         <ul id="slide-ul-list">
           <h2>Tutorials</h2>
             <li><a href="#note">How to create a navigation bar</a></li>
-            <li><a href="#">How to create the footer</a></li>
+            <li><a href="#footer-anchor">How to create the footer</a></li>
             <li><a href="#">How to create a form</a></li>
             <li><a href="Logo-design.html#solve-div">How to build a calculator</a></li>
             <li><a href="#">How to build an inventory app</a></li>
@@ -371,6 +371,317 @@ how these things works as we move on to the next step.</p>
 <p>We have successfully created our <button>Navigation bar</button>, if you are reading this now
   it means that you have been following this tutorial step by step, so, I must congratulate you
   for haven learned how to build a navigation bar using HTML and CSS.</p>
+</div>
+<hr>
+<div class="codelab-intro-container2 codebox">
+   
+   <p>After creating the navigation bar for your website, the next thing that comes to mind is usually the footer.
+    However, there is no rule about what to create first and last when building a website, but the reason why most developers
+    create the navigation bar and the footer first may simply be beacause they are similar in regard to their contents.
+   </p>
+   <p><button id="footer-anchor">Footer:</button> A footer is the bottom section of a website, every website has it for it contains neccessary Information
+    including a brief introduction to the site, quick links, and sitemap. It also contains a copyright notice, link to privacy policy, and so on.
+    The purpose of a website footer is to help visitors by reminding them the navigation options that they may have not seen on top, due to the
+    sub-menu that hides them from the main navigation bar, therefore, a footer plays an important role on the website for it enables developers
+    to engage with their clients.</p>
+    <p>We are now going to build our website's footer that will have four columns.</p>
+    <ol>
+    <li>A column that will contain a section about the business or company, and also the brand logo.</li>
+    <li>A column that will contain few links to more important pages and sections of the site.</li>
+    <li>A column that will link the visitors outside of the site, for example; our social media Networks.</li>
+    <li>A column that will contain policies and regulations of the site/company.</li>
+  </ol>
+  <p>Already, you have learned how to code with HTML from our previous tutorial, we are going to apply the same method here. So, let us begin!</p>
+  <p>Go to your HTML editor and write these lines of code within the &lt;body&gt; tag.</p>
+  
+  <div class="htlm-code" id="coder">
+    <pre class="line">
+     <code class="language-html">
+&lt;body&gt; 
+
+   &lt;footer id=&quot;footer-container&quot;&gt;
+      &lt;div class=&quot;about-us inner-div&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;quick-links inner-div&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;social-links inner-div&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;regulations inner-div&quot;&gt;&lt;/div&gt;
+   &lt;/footer&gt;
+
+&lt;/body&gt;
+     </code> 
+   </pre>
+  </div>
+
+  <p>If you look at this code, you will notice that we have created a footer with a &lt;footer&gt; tag. You could also see that we are having
+   four lines of code inside of it wrapped with a &lt;div&gt; tag. <i><b>div</b></i> means "divide" in HTML, it is used for creating containers,
+   columns, and several kinds of layout. The four <b>div</b>s we have here will create four columns, and we have given each of them a class name that
+   describes its content. Remember, <i>a class name is not a <b>code,</b> you can name it anything you want,</i> but it is advised to always use a name
+   that describes what its contents will be, the reason is because before a complete website is structured, you're going to write a lot of code,
+   and it is obvious that you will always make changes to your website from time to time, even when published, therefore, it will be almost imposible
+   to understand your code later if you don't use descriptive <b>class</b> and <b>id</b> names. please, take note on that!</p>
+   <p>The <b>div</b> will show nothing on the page yet because we have not put anything inside it. So, that is what we are going to do now.</p>
+
+   <div class="htlm-code" id="coder">
+    <pre class="line">
+     <code class="language-html">
+&lt;footer id=&quot;footer-container&quot;&gt;
+
+  &lt;div class=&quot;about-us inner-div&quot;&gt;
+    &lt;h1&gt;About us&lt;/h1&gt;
+      &lt;img src=&quot;CodeImages/Catylivonlogo.png&quot; alt=&quot;Our logo&quot;&gt;
+      &lt;p&gt;Catylivon is the national association representing  industrial shoemakers in Europe.
+        It has about 600 member companies and represents the excellence of Italian and Turkish footwear.
+        The footwear sector as a whole employs over 70,000 people, exports 85% of its production
+        and has an overall annual turnover that in 2019, pre-Covid, was around 14.3 billion euros.&lt;/p&gt;
+  &lt;/div&gt;
+ 
+  &lt;div class=&quot;quick-links inner-div&quot;&gt;
+    &lt;h1&gt;Quick links&lt;/h1&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sandals&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Slippers&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Men shoes&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Women shoes&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Children shoes&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Winter shoes&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Summer shoes&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Safety shoes&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+  &lt;/div&gt;
+ 
+  &lt;div class=&quot;social-links inner-div&quot;&gt;
+    &lt;h1&gt;Follow us&lt;/h1&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;linkedin&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pinterest&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Telegram&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tumblr&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/div&gt;
+ 
+  &lt;div class=&quot;regulations inner-div&quot;&gt;
+    &lt;h1&gt;Regulations&lt;/h1&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;terms of use&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Regulations&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Affiliations&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Certification&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Registration&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Communication&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Site map&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+  &lt;/div&gt;
+ 
+&lt;/footer&gt;
+     </code> 
+   </pre>
+  </div>
+
+<img src="CodeImages/footer-1.jpg" class="footer-1foto" alt="">
+<p>Now, take a look at our code carefully, we have created contents inside each of the four <b>div</b>s.
+The first div is the introductory container that has three tag elements inside of it. The &lt;h1&gt; tag, which is where we write out title, <i><b>About us.</b></i>
+Followed by the &lt;img&gt; tag, which is where we place our Logo. This img tag has two attributes inside of it, the <b>src=" "</b> that helps us search images, videos,
+and other files inside our computer. The <b>alt=" "</b> attribute is where give alternative name to the file inside the &lt;img&gt; tag, which will only be visible on the
+website whenever the main image fails to load as a result of poor internet connectivity, it helps site visitors to know what was put there.
+Then thirdly, it has a <b>p</b> tag, this is used for writing a paragraph in HTML, just like the one you're reading now, I used the &lt;p&gt; tag to create it.</p>
+<p><button>Attribute:</button> HTML attributes are special words used inside tags to place elements and modifies or control their behaviour. In the code examples you can see that
+the <b>src</b> attribute placed the logo, while the <b>alt</b> controls its behaviour, so, this is what attributes are. Don't worry, you will learn more about them as we move on.</p>
+<p>The second div is our quick links, inside we have two tags, the <i><b>h1</b></i> for the title, and the <i><b>ul</b></i> for the unodered lists. We explained the &lt;ul&gt; tag in our previous tutorial, the <button>Navigation bar</button>.
+But the &lt;ul&gt; itself has two tags inside of it, the &lt;li&gt; that lists the items, and the &lt;a&gt; that links the items to somewhere else. The <b>a</b> tag always has the attribute <b>href=" "</b>
+inside of it whose value will be the website, or page address where you want the clicker to land. We also talked about them in our previous tutorial.</p>
+<p>Finaly, the third and the fourth div are similar to the second div. So, let us move on, but before that, always remember that every open tag must have a closing tag, for example;
+&lt;p&gt;My paragraph&lt;/p&gt;. However, there are some HTML tags that do not require a closing tag, such tags are called <b>void tags</b> which normally have one or more attributes inside of them,
+you will learn more about them as we move on. And also, remember that every attribute must be in this format, html-reserved-words-for-attributes followed with equals mark <b>=</b>, and then, two double quotes <b>" "</b>
+where the value, or element will be placed. example; width="100%". The word <b>width</b> is an attribute, while <b>100%</b> is the value. You can use any value according to your need.</p>
+<hr>
+<p>Alright, we have structured our footer with HTML, we are Now going to design it with CSS, so that it will look appealing to the eyes.</p>
+<p>We will be targeting the footer with the <b>id</b> name <b>"footer-container"</b>, I used an id this time because i want to show you how to use it in CSS.
+But we use <b>class</b> names for the four inner containers, and we will be targeting them one after another. However, if you observe, you will notice that we are having two class names for one <b>div</b>, and that the extra class name
+<b>inner-div</b> is used for the four <b>div</b>s. The reason is simply because there is no need to keep repeating our codes in CSS, if there should be any style that will apply for the four <b>div</b>s, we don't have to rewrite our code in four places,
+we simply have to target the general class name, then, the style will apply on all, and if there should be a unique style, then, we target the unique class name.</p>
+
+<div class="css-code">
+  <pre class="line">
+    <code class="language-css">
+/*This is the footer styling in css*/
+
+#footer-container{
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+}
+      
+#footer-container > .about-us > img{
+  width: 300px;
+}
+      
+#footer-container > .about-us > p{
+  width: 300px;
+}
+      
+#footer-container > h1{
+  width: 300px;
+}
+      
+#footer-container > .inner-div{
+  width: 300px;
+  margin: 0 10px;
+}
+    </code> 
+  </pre>
+</div>
+
+<p>So far so good, we're heading somewhere! You can now see how our footer looks after we have written few lines of codes in CSS.</p>
+<img src="CodeImages/footer-2.jpg" class="footer-2foto" alt="">
+<p>Now you can understand what i was talking about, the footer was given an id name <b>"footer-container"</b>, that is why we have to use <b>#</b>
+in front of it in CSS, instead of a "dot". Now, I want you to know something, width, height, and the rest of them are called <b>attributes</b> in HTML, but in CSS they are called <b>properties</b>, their values remain <b>values</b>, both in HTML, CSS, and even in JavaScript.
+So, don't be confused about that.</p>
+<p>We give the width the value of <b>100%</b> because we want it to be in full-width. We set the <b>padding 0 30px.</b> The <b>0</b> applies to the top and bottom, we don't want the four columns to have space in the top and bottom between them and their container the <b>footer.</b>
+The <b>30px</b> applies to the left and right, we are giving 30px to the left and 30px to the right, that is the easiest way to use paddind in CSS, we could have written it this way (padding-top 0; padding-bottom 0; padding-left 30px; padding-right 30px;), it is still the same, but that
+is not the best way to write codes.</p>
+<p>You can notice that the first structure was in a vertical alignment by default, but the second one is now horizontal, that happened because we set the <b>display</b> property <b>"flex",</b> and by default they will float to the left side, but the <b>justify-content</b> put them in the center.</p>
+
+<div class="css-code">
+  <pre class="line">
+    <code class="language-css">
+/*This is the footer styling in css*/
+
+#footer-container{
+  width: 100%;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  background-color: rgb(182, 181, 181);
+  bottom: 0;
+  position: absolute;
+ }
+ 
+#footer-container > .about-us > img{
+  width: 300px;
+}
+ 
+#footer-container > .about-us > p{
+  width: 300px;
+  text-align: left;
+  font-size: 17px;
+}
+ 
+#footer-container > .inner-div > h1{
+  width: 300px;
+}
+
+/*These lines of code below created the horizontal border line under the title*/
+
+#footer-container > .inner-div > h1:after{
+  content: "";
+  display: block;
+  position: relative;
+  border: 2px solid;
+  width: 20%;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: brown;
+}
+ 
+#footer-container > .inner-div{
+  width: 300px;
+  margin: 0 10px;
+  text-align: center;
+}
+ 
+#footer-container > .inner-div{
+  width: 300px;
+  margin: 0 10px;
+  text-align: center;
+}
+ 
+#footer-container > .inner-div > ul{
+  margin-top: 95px;
+}
+ 
+#footer-container > .inner-div > ul > li{
+  list-style: none;
+  line-height: 30px;
+}
+ 
+#footer-container > .inner-div > ul > li > a{
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+    </code> 
+  </pre>
+</div>
+<p>We have applied some other styles to beautify our footer the more. In the main container, we added a background color, if you are using <b>VS Code Editor</b> as I suggested, then, you will not find it difficult selecting colors in CSS, once you write
+a property name like; <b>color,</b> then, colors will pop up for you to select.</p>
+<p>We set the position "absolute" because we want it to separate itself from other elements on the page. Then, since it's a footer, we have to set the bottom <b>0</b>, so that it wraps without giving a bit space at the bottom.</p>
+<img class="footer-3foto" src="CodeImages/footer-3.jpg" width="100%" alt="">
+<p>We added font-sizes to get the exact size we want. Just take your time and observe the code repeatedly, this way, you will learn faster.</p>
+<p>The last thing we will have to do is to create the lower footer that will display the current year, and also the "All-rights reserved" declaration,
+almost every website has them, so, we are going to create ours as well.</p>
+
+<div class="htlm-code" id="coder">
+  <pre class="line">
+   <code class="language-html">
+&lt;footer&gt;
+   
+  &lt;div class=&quot;footer-two&quot;&gt;
+    &lt;p&gt;@2023 - CATYLIVON &bull; All-rights reserved&lt;/p&gt;
+  &lt;/div&gt;
+    
+&lt;/footer&gt;
+   </code> 
+ </pre>
+</div>
+
+<p>It is very simple. we only added this single line of code inside the &lt;footer&gt; tag still, but under the four columns that we created first.
+And below is how we designed it in CSS.</p>
+
+<div class="css-code">
+  <pre class="line">
+    <code class="language-css">
+#footer-container > .inner-div > ul > li > a{
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  transition: all 0.4s ease;
+}
+      
+#footer-container > .inner-div > ul > li > a:hover{
+  color: brown;
+  padding-left: 20px;
+  transition: all 0.4s ease;
+}
+      
+.footer-two{
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(121, 116, 116);
+  text-align: center;
+}
+      
+.footer-two > p{
+  padding: 10px;
+}
+    </code> 
+  </pre>
+</div>
+<p>This is the result. We have created a navigation bar and a footer using HTML and CSS, therefore, if you are reading this it means that you have been following this tutorial, and that goes to confirm that you are now having at least a basic knowledge of these two languages,
+HTML and CSS. You may need to start from the beginning just to refresh your memory, this is how you can learn coding, and make sure you keep practicing the one's you've learned. Should you need our assistance in anyway, you're free to contact us, one of our team members will help you out.</p>
+<video loop width="100%" autoplay>
+  <source src="CodeImages/footervid-1.mp4" type="video/mp4">
+</video>
+<p>At the moment, our web page is empty because we have not created any content yet, and since our website is a footwear manufacturing company, we are going to create next a shop that will display our products. So, get ready for that.</p>
+
+
 </div>
 
 
