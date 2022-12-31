@@ -341,6 +341,28 @@ html{
       display: inline-block;
       width: 250px;
     }
+    
+    .codelab-intro-container2{
+      padding: 20px;
+    }
+    .codelab-intro-container2 > p{
+      font-size: 18px;
+      padding: 5px 0;
+    }
+    .codelab-intro-container2 > p > button{
+      border: none;
+      font-size: 18px;
+      cursor: text;
+      padding: 0 5px;
+    }
+    .codelab-intro-container2 > ol{
+      font-size: 18px;
+      padding: 10px 20px;
+      text-align: left;
+    }
+    .codelab-intro-container2 > .footer-2foto{
+      padding: 40px 0;
+  }
 
 
     /*Codelab design from Prism*/
@@ -461,8 +483,16 @@ html{
     font-size: 16px;
     padding: 0 5px;
   }
+   
+  .codelab-intro-container2 > .footer-1foto{
+    width: 100%;
+  }
 }
-
+@media screen and (max-width: 960px){
+  .codelab-intro-container2 > .footer-2foto{
+    width: 100%;
+}
+}
 
 
 
