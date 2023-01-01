@@ -123,17 +123,17 @@
 
   <div class="contact-form-wrapper wrapper">
     <h1>Send us a message</h1>
-     <form method="post" action="" name="theform">
+     <form method="post" action="mail.php" name="theform">
         <label class="label-for-input" for="firstName">Name</label>
-        <input id="firstName" type="name" onKeyup="checkform()" placeholder="Godwin Elijah">
+        <input id="firstName" type="name" name="name" onKeyup="checkform()" placeholder="Godwin Elijah">
         <br>
 
         <label class="label-for-input" for="emailText">Email</label>
-        <input id="emailText" type="email" onKeyup="checkform()" placeholder="Example@gmail.com">
+        <input id="emailText" type="email" name="email" onKeyup="checkform()" placeholder="Example@gmail.com">
         <br>
 
         <label class="label-for-textarea" for="textareaText">Your message</label>
-        <textarea id="textareaText" cols="30" rows="3" onKeyup="checkform()" placeholder="Message"></textarea>
+        <textarea id="textareaText" cols="30" rows="3" name="message" onKeyup="checkform()" placeholder="Message"></textarea>
 
         <input class="form-sub-btn" id="btncontact1" type="submit" value="Submit" onclick="btncontact()" disabled="disabled">
      </form>
