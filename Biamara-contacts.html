@@ -123,15 +123,15 @@
   <div class="contact-form-wrapper wrapper">
     <h1>Send us a message</h1>
      <form name="theform">
-        <label class="label-for-input" for="text">Name</label>
-        <input id="firstName" type="text" onKeyup="checkform()" placeholder="Godwin Elijah">
+        <label class="label-for-input" for="firstName">Name</label>
+        <input id="firstName" type="name" onKeyup="checkform()" placeholder="Godwin Elijah">
         <br>
 
-        <label class="label-for-input" for="email">Email</label>
+        <label class="label-for-input" for="emailText">Email</label>
         <input id="emailText" type="email" onKeyup="checkform()" placeholder="Example@gmail.com">
         <br>
 
-        <label class="label-for-textarea" for="textarea">Your message</label>
+        <label class="label-for-textarea" for="textareaText">Your message</label>
         <textarea id="textareaText" cols="30" rows="3" onKeyup="checkform()" placeholder="Message"></textarea>
 
         <input class="form-sub-btn" id="btncontact1" type="submit" value="Submit" onclick="btncontact()" disabled="disabled">
