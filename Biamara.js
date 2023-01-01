@@ -544,19 +544,6 @@ function checkform()
         }
     }
 
-   function sendEmail(){
-      Email.send({
-        SecureToken: "4be41e98-1bb2-4b63-bf5a-eb6f0599c72b",
-        To : 'elijahigodo@gmail.com',
-        From : document.getElementById("emailText").value,
-        Subject : "New Message From Biamara",
-        Body : "Name:" + document.getElementById("firstName").value
-              + "<br> Email:" + document.getElementById("emailText").value
-              + "<br> Message:" + document.getElementById("textareaText").value
-  })  .then(
-        message => alert("Thank you for contacting us! One of our team members will get in touch with you soon!")
-  );
-  }
 
 
 
