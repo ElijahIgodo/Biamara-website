@@ -546,9 +546,7 @@ function checkform()
 
    function sendEmail(){
       Email.send({
-        Host : "smtp.elasticemail.com",
-        Username: "elijahigodo@gmail.com",
-        Password : "B823C7BA469A4AA5CC51111B25DF40DBDE77",
+        SecureToken: "4be41e98-1bb2-4b63-bf5a-eb6f0599c72b",
         To : 'elijahigodo@gmail.com',
         From : document.getElementById("emailText").value,
         Subject : "New Message From Biamara",
