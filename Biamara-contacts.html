@@ -1,28 +1,3 @@
-<?php
-
-  if(isset($_POST['submit'])){
-    $mailto = "elijahigodo@gmail.com";
-    $from = $_POST['email'];
-    $name = $_POST['name']:
-    $subject = $_POST['subject'];
-    $subject2 = "Your message has been sent successfully!";
-    $message = "Cient Name". $name. "Wrote the following message". "\n\n". $_POST['message'];
-    $message2 = "Dear ". $name. "\n\n". "Thank you for contacting us! We'll get back to you shortly".
-    $headers = "from: ". $from;
-    $headers2 = "From: ". $mailto;
-    $result = mail($mailto, $subject, $message, $headers);
-    $result2 = mail($from, $subject2, $message2, $headers2);
-    if ($result){
-      echo '<script type="text/Javascript">alert("Your message was sent successfully! We'll contact you shortly.")></script>';
-    } else {
-      echo '<script type="text/Javascript">alert("Message submission failed! Try again later.")></script>';
-    }
-
-  }
-
-?>
-
-
 
 <!DOCTYPE html>
 <html>
