@@ -544,6 +544,23 @@ function checkform()
         }
     }
 
+   function sendEmail(){
+      Email.send({
+        Host : "smtp.elasticemail.com",
+        Username: "elijahigodo@gmail.com",
+        Password : "B823C7BA469A4AA5CC51111B25DF40DBDE77",
+        To : 'elijahigodo@gmail.com',
+        From : document.getElementById("emailText").value,
+        Subject : "New Message From Biamara",
+        Body : "Name:" + document.getElementById("firstName").value
+              + "<br> Email:" + document.getElementById("emailText").value
+              + "<br> Message:" + document.getElementById("textareaText").value
+  })  .then(
+        message => alert("Thank you for contacting us! One of our team members will get in touch with you soon!")
+  );
+
+
+
 
 //Let us now program our codelab contents
 
