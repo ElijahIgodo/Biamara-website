@@ -558,6 +558,7 @@ function checkform()
   })  .then(
         message => alert("Thank you for contacting us! One of our team members will get in touch with you soon!")
   );
+  }
 
 
 
