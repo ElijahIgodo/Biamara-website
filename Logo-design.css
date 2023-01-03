@@ -356,6 +356,7 @@
   letter-spacing: 1.5px;
   opacity: 0.8;
 }
+
 @media screen and (max-width: 380px){
   .logo-intro-bottom-div h1{
     font-size: 18px;
@@ -874,6 +875,12 @@ hr {
 @media screen and (max-width: 789px){
   .navbar{
   padding: 0px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+ .logo-intro-top-div{
+  padding-top: 105px;
 }
 .Bia{
   padding-inline-start: 40px;
