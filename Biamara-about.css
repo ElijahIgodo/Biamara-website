@@ -569,6 +569,12 @@ hr {
 @media screen and (max-width: 789px){
   .navbar{
   padding: 0px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+.aboutfoto{
+  margin-top: 50px;
 }
 .Bia{
   padding-inline-start: 40px;
