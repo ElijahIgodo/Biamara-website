@@ -123,3 +123,10 @@
     flex-shrink: 0;
   }
 }
+
+@media screen and (max-width: 789px){
+  .team-intro-div{
+    padding-top: 75px;
+  }
+  
+}
