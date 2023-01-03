@@ -449,6 +449,9 @@ transition: 0.1s;
 @media screen and (max-width: 789px){
 .navbar{
 padding: 0px;
+position: fixed;
+top: 0;
+z-index: 5;
 }
 .Bia{
 padding-inline-start: 40px;
