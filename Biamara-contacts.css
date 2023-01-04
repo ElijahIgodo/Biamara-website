@@ -318,6 +318,11 @@
       left: 200px;
       top: 120px;
      }
+     #firstName, #emailText, #textareaText{
+      border-radius: 8px;
+      outline: none;
+      font-size: 18px;
+     }
 
      @media screen and (max-width: 1018px){
       .cont-scc-msg{
