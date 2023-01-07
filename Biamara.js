@@ -483,27 +483,52 @@ let logoForm40 = document.getElementById("logo-form40")
 let loveRate = document.getElementById("heart");
 
  loveRate.addEventListener('click', function onclick(event){
-    event.target.style.color = 'red';
+  if (event.target.style.color == "red") {
+    event.target.style.color = 'white';
+  }
+  else {
+    event.target.style.color = "red";
+  }
  });
  let loveRate2 = document.getElementById("heart2");
 
  loveRate2.addEventListener('click', function onclick(event){
-    event.target.style.color = 'red';
+  if (event.target.style.color == "red") {
+    event.target.style.color = 'white';
+  }
+  else {
+    event.target.style.color = "red";
+  }
  });
  let loveRate3 = document.getElementById("heart3");
 
  loveRate3.addEventListener('click', function onclick(event){
-    event.target.style.color = 'red';
+  if (event.target.style.color == "red") {
+    event.target.style.color = 'white';
+  }
+  else {
+    event.target.style.color = "red";
+  }
  });
  let loveRate4 = document.getElementById("heart4");
 
  loveRate4.addEventListener('click', function onclick(event){
-    event.target.style.color = 'red';
+  if (event.target.style.color == "red") {
+    event.target.style.color = 'white';
+  }
+  else {
+    event.target.style.color = "red";
+  }
  });
  let loveRate5 = document.getElementById("heart5");
 
  loveRate5.addEventListener('click', function onclick(event){
-    event.target.style.color = 'red';
+  if (event.target.style.color == "red") {
+    event.target.style.color = 'white';
+  }
+  else {
+    event.target.style.color = "red";
+  }
  });
 
  
