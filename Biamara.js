@@ -1,4 +1,5 @@
-
+const year = new Date().getFullYear();
+  document.querySelector(".footer-alrights").innerHTML = "@"+ year+ " "+ "- Biamara &#183 All rights reserved";
 
 //THis the logo container section
 
