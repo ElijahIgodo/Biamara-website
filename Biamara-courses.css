@@ -284,7 +284,33 @@
   margin-top: 10px;
 }
 
+.course-notice{
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  width: 250px;
+  display: none;
+  transition: all 0.6s ease-in-out;
+}
+.course-notice:hover{
+  width: 300px;
+  font-size: 25px;
+}
 
+
+@media screen and (max-width: 684px){
+  .course-notice{
+    width: 200px;
+  }
+  .course-notice:hover{
+    width: 200px;
+    font-size: 18px;
+  }
+}
 
 
 
