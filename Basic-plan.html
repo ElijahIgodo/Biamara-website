@@ -100,6 +100,9 @@
       margin-top: 30px;
       background-color: rgb(146, 9, 146);
       color: white;
+      padding: 5px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
     }
     .subscription-div > p{
       font-size: 25px;
@@ -208,7 +211,8 @@
       .basic-plan-container{
       background-color: rgb(146, 36, 9);
       width: 100%;
-      padding: 20px;
+      padding: 20px 0;
+      padding-bottom: 0;
       align-items: center;
     }
     .basic-plan-container > form{
@@ -217,8 +221,8 @@
       height: 100%;
       margin-left: auto;
       margin-right: auto;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
       padding-bottom: 20px;
     }
     .basic-plan-container > form > .account-div, .subscription-div, .company-div, .home-contact-div{
@@ -226,15 +230,29 @@
       display: block;
     }
     .basic-plan-container > form input, select{
-      width: 200px;
-      padding: 8px;
+      width: 90%;
+      padding: 12px;
       margin: 10px;
       margin-left: 0;
       border: none;
       border-radius: 5px;
       outline: none;
-      font-size: 16px;
+      font-size: 18px;
     }
+    .sect1, .sect2, .sect3, .sect4, .sect5, .sect5, .sect6, .sect7, .sect8, .sect9, .sect10, .sect22, .sect99
+    , .sect11, .sect12, .sect13, .sect14, .sect15, .sect16{
+      width: 100%;
+    }
+    select#ccountry{
+      width: 90%;
+    }
+    input#cnumber{
+      width: 60%;
+    }
+    input#hnumber{
+      width: 60%;
+    }
+  
     #hphone{
       width: 1vw;
       border: none;
@@ -243,9 +261,7 @@
       width: 1vw;
       border: none;
     }
-    #ccountry, #hcountry{
-      width: 200px;
-    }
+    
     section{
       display: inline-block;
     }
@@ -309,10 +325,7 @@
     .company-div > input{
       width: auto;
     }
-    #cnumber, #hnumber{
-      width: 150px;
-    }
-    
+  
     .radio-div{
       display: grid;
       grid-template-columns: repeat(1, 200px);
@@ -328,7 +341,8 @@
       box-shadow: none;
       padding: 7px 30px;
       font-weight: bold;
-      background-color: brown;
+      background-color: black;
+      color: white;
     }
     section {
       margin: 7px;
@@ -414,7 +428,7 @@
    <div class="basic-plan-container">
       <form action="https://formspree.io/f/xayzyddv" method="POST">
         <div class="account-div">
-           <h1>Create account</h1><br>
+           <h1>CREATE AN ACCOUNT</h1><br>
            <input type="text" name="Fname" placeholder="First Name..." required>
            <input type="text" name="Lname" placeholder="Last Name..." required>
            <input type="email" name="Email" placeholder="Email..." required>
