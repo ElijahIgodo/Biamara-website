@@ -572,3 +572,393 @@ function menuexiticon (){
   slideUl.style.overflow = 'hidden';
 }
 
+
+
+
+//Let us program our course notification message.
+
+
+function noticeBtn1(){
+  let notice1 = document.getElementById("course-notice1");
+  if (notice1.style.display == "block") {
+    notice1.style.display = "none";
+  }
+  else {
+    notice1.style.display = "block";
+  }
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+} 
+
+function noticeBtn2(){
+  let notice2 = document.getElementById("course-notice2");
+  if (notice2.style.display == "block") {
+    notice2.style.display = "none";
+  }
+  else {
+    notice2.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+} 
+
+function noticeBtn3(){
+  let notice3 = document.getElementById("course-notice3");
+  if (notice3.style.display == "block") {
+    notice3.style.display = "none";
+  }
+  else {
+    notice3.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+}
+
+function noticeBtn4(){
+  let notice4 = document.getElementById("course-notice4");
+  if (notice4.style.display == "block") {
+    notice4.style.display = "none";
+  }
+  else {
+    notice4.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+} 
+
+function noticeBtn5(){
+  let notice5 = document.getElementById("course-notice5");
+  if (notice5.style.display == "block") {
+    notice5.style.display = "none";
+  }
+  else {
+    notice5.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+} 
+
+function noticeBtn6(){
+  let notice6 = document.getElementById("course-notice6");
+  if (notice6.style.display == "block") {
+    notice6.style.display = "none";
+  }
+  else {
+    notice6.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+} 
+
+function noticeBtn7(){
+  let notice7 = document.getElementById("course-notice7");
+  if (notice7.style.display == "block") {
+    notice7.style.display = "none";
+  }
+  else {
+    notice7.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+} 
+
+function noticeBtn8(){
+  let notice8 = document.getElementById("course-notice8");
+  if (notice8.style.display == "block") {
+    notice8.style.display = "none";
+  }
+  else {
+    notice8.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+} 
+
+function noticeBtn9(){
+  let notice9 = document.getElementById("course-notice9");
+  if (notice9.style.display == "block") {
+    notice9.style.display = "none";
+  }
+  else {
+    notice9.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+} 
+
+function noticeBtn10(){
+  let notice10 = document.getElementById("course-notice10");
+  if (notice10.style.display == "block") {
+    notice10.style.display = "none";
+  }
+  else {
+    notice10.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+} 
+
+function noticeBtn11(){
+  let notice11 = document.getElementById("course-notice11");
+  if (notice11.style.display == "block") {
+    notice11.style.display = "none";
+  }
+  else {
+    notice11.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+  let notice12 = document.getElementById("course-notice12");
+  notice12.style.display = "none";
+}
+
+function noticeBtn12(){
+  let notice12 = document.getElementById("course-notice12");
+  if (notice12.style.display == "block") {
+    notice12.style.display = "none";
+  }
+  else {
+    notice12.style.display = "block";
+  }
+  let notice1 = document.getElementById("course-notice1");
+  notice1.style.display = "none";
+  let notice3 = document.getElementById("course-notice3");
+  notice3.style.display = "none";
+  let notice4 = document.getElementById("course-notice4");
+  notice4.style.display = "none";
+  let notice5 = document.getElementById("course-notice5");
+  notice5.style.display = "none";
+  let notice6 = document.getElementById("course-notice6");
+  notice6.style.display = "none";
+  let notice7 = document.getElementById("course-notice7");
+  notice7.style.display = "none";
+  let notice8 = document.getElementById("course-notice8");
+  notice8.style.display = "none";
+  let notice9 = document.getElementById("course-notice9");
+  notice9.style.display = "none";
+  let notice10 = document.getElementById("course-notice10");
+  notice10.style.display = "none";
+  let notice11 = document.getElementById("course-notice11");
+  notice11.style.display = "none";
+  let notice2 = document.getElementById("course-notice2");
+  notice2.style.display = "none";
+} 
+
