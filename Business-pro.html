@@ -431,9 +431,9 @@
       <form action="https://formspree.io/f/xoqzqnkq" method="POST">
         <div class="account-div">
            <h1>CREATE AN ACCOUNT</h1><br>
-           <input type="text" name="Fname" placeholder="First Name..." required>
-           <input type="text" name="Lname" placeholder="Last Name..." required>
-           <input type="email" name="Email" placeholder="Email..." required>
+           <input type="text" name="Fname" id="ffname" placeholder="First Name..." onblur="getFirstName()" required>
+           <input type="text" name="Lname" id="llname" placeholder="Last Name..." onblur="getLastName()" required>
+           <input type="email" name="Email" id="ffemail" placeholder="Email..." onblur="getValue()" required>
            <input type="password" name="Password" placeholder="Password..." required>
         </div>
         <div class="subscription-div">
@@ -1074,9 +1074,21 @@
       else {
         document.getElementById("oneforyou").style.display = "none";
       }
-
      }
 
+     function getValue () {
+      var placeEmail;
+      placeEmail = document.getElementById('ffemail').value;
+      document.getElementById('hemail').value = placeEmail;
+    }
+
+
+    function getLastName (){
+      let placeFirstName = document.getElementById('ffname').value;
+      let placeLastName = document.getElementById('llname').value;
+      let placeFullName = placeFirstName + " " + placeLastName
+      document.getElementById('fullname').value = placeFullName;
+    }
     
 </script>
 
