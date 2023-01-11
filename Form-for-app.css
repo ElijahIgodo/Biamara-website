@@ -1,0 +1,1275 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'poppins', sans-serif;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+
+/*App service portal*/
+
+
+.app-form-container{
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 0;
+  background-color: white;
+}
+.app-form-container > form{
+  background-color: white;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+  text-align: center;
+}
+.app-form-intro-div{
+  width: 100%;
+  text-align: center;
+}
+.app-form-intro-div > h1{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+.app-form-intro-div > p{
+ font-size: 25px;
+ width: 90%;
+ text-align: left;
+ margin-left: auto;
+ margin-right: auto;
+ 
+ letter-spacing: 1px;
+}
+.form-choose-btn{
+  width: 100%;
+  text-align: center;
+  background-color: aliceblue;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+.form-choose-btn > div{
+  width: 45%;
+  display: inline-block;
+}
+.form-choose-btn > div > p{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.form-choose-btn > div > h4{
+  box-shadow: 0 0 10px;
+  font-size: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.main-app-service-form{
+  width: 100%;
+  text-align: center;
+  display: none;
+  transition: all 0.6s ease-in-out;
+  animation-name: formpage;
+  animation-duration: 4s;
+}
+.main-app-service-form > h2{
+  font-size: 40px;
+}
+.main-app-service-form > .p-icon{
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.main-app-service-form > div{
+  display: inline-block;
+  margin: 30px 20px;
+}
+.main-app-service-form > div > input, select, textarea{ 
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 0 5px rgb(85, 85, 85);
+  outline: none;
+  border-radius: 6px;
+}
+.main-app-service-form > div label{ 
+  font-size: 20px;
+  margin-right: 10px;
+}
+.textarea-div{ 
+  width: 95%;
+  text-align: center;
+  margin: 0;
+}
+.textarea-div > p{ 
+  font-size: 18px;
+  width: 70%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.textarea-div > textarea{ 
+  width: 70%;
+}
+.main-app-service-form h3{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.checkbox-div{
+  width: 95%;
+  margin-top: 15px;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+.checkbox-div div{
+  display: inline-block;
+  width: 45%;
+}
+.checkbox-div > div > p{
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.checkbox-div > div > section,  input{
+  text-align: left;
+}
+.checkbox-div > div > section > input{
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+#phone{
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 0 5px rgb(85, 85, 85);
+  outline: none;
+  border-radius: 6px;
+  width: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#myphone{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 70%;
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 0 5px rgb(85, 85, 85);
+  outline: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+#logofile{
+  width: fit-content;
+  background-color: aqua;
+  padding: 10px;
+  display: none;
+  transition: all 0.6s ease-in-out;
+  animation-name: logofile;
+  animation-duration: 2s;
+}
+.chooseplan-div{
+  width: fit-content;
+  background-color: aqua;
+  padding: 10px;
+  display: none;
+  transition: all 0.6s ease-in-out;
+  animation-name: logofile;
+  animation-duration: 2s;
+}
+.chooseplan-div > p{
+  padding-top: 10px;
+}
+.app-website-address{
+  background-color: aqua;
+  width: fit-content;
+  padding: 10px;
+  display: none;
+  transition: all 0.6s ease-in-out;
+  animation-name: logofile;
+  animation-duration: 2s;
+}
+.ourlogo, .ourwebsite{
+  background-color: aqua;
+  width: fit-content;
+  padding: 10px;
+  display: none;
+  transition: all 0.6s ease-in-out;
+  animation-name: logofile;
+  animation-duration: 2s;
+}
+.app-website-address input{
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 0 5px rgb(85, 85, 85);
+  outline: none;
+  border-radius: 6px;
+}
+.required-sign{
+  font-size: 6px;
+  color: red;
+  position: absolute;
+}
+.footer-div{
+  display: none;
+}
+
+
+@media screen and (max-width: 789px){
+  .app-form-container > form{
+    padding-top: 120px;
+  }
+
+  .main-app-service-form{
+    transition: all 0.6s ease-in-out;
+    animation-name: formpage;
+    animation-duration: 4s;
+  }
+
+  .app-form-intro-div > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .app-form-intro-div > p{
+   font-size: 18px;
+   width: 90%;
+   text-align: left;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .form-choose-btn{
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 0;
+  }
+  .form-choose-btn > div{
+    width: 45%;
+    display: inline-block;
+  }
+  .form-choose-btn > div > p{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .form-choose-btn > div > h3{
+    font-size: 16px;
+  }
+  .form-choose-btn > div > h4{
+    font-size: 30px;
+    padding: 0 9px;
+  }
+  
+  .main-app-service-form{
+    width: 100%;
+    text-align: center;
+  }
+  .main-app-service-form > h2{
+    font-size: 30px;
+  }
+  .main-app-service-form > .p-icon{
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  .main-app-service-form > div{
+    display: block;
+    margin: 30px 20px;
+  }
+  .main-app-service-form > div > input, select, textarea{ 
+    font-size: 18px;
+    padding: 6px;
+    border: none;
+    box-shadow: 0 0 5px rgb(85, 85, 85);
+    outline: none;
+    border-radius: 6px;
+  }
+  .main-app-service-form > div label{ 
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .textarea-div{ 
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .textarea-div > p{ 
+    font-size: 18px;
+    width: 70%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  .textarea-div > textarea{ 
+    width: 70%;
+  }
+  .main-app-service-form h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .checkbox-div{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .checkbox-div div{
+    display: inline-block;
+    width: 45%;
+  }
+  .checkbox-div > div > p{
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .checkbox-div > div > section,  input{
+    text-align: left;
+  }
+  .checkbox-div > div > section > input{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+  #phone{
+    font-size: 18px;
+    padding: 6px;
+    border: none;
+    box-shadow: 0 0 5px rgb(85, 85, 85);
+    outline: none;
+    border-radius: 6px;
+    width: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #myphone{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 35%;
+  }
+  #logofile{
+    width: fit-content;
+    background-color: aqua;
+    padding: 10px;
+    display: none;
+  }
+  .chooseplan-div{
+    width: fit-content;
+    background-color: aqua;
+    padding: 10px;
+    display: none;
+  }
+  .chooseplan-div > p{
+    padding-top: 10px;
+  }
+  .app-website-address{
+    background-color: aqua;
+    width: fit-content;
+    padding: 10px;
+    display: none;
+  }
+  .ourlogo, .ourwebsite{
+    background-color: aqua;
+    width: fit-content;
+    padding: 10px;
+    display: none;
+  }
+  .app-website-address input{
+    font-size: 18px;
+    padding: 6px;
+    border: none;
+    box-shadow: 0 0 5px rgb(85, 85, 85);
+    outline: none;
+    border-radius: 6px;
+  }
+  .main-app-service-form section{
+    width: 100%;
+    text-align: left;
+  }
+  
+}
+
+@media screen and (max-width: 742px){
+
+  .app-form-container{
+    margin: 0;
+    padding-top: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  
+  .form-choose-btn{
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 0;
+  }
+  .form-choose-btn > div{
+    width: 100%;
+    display: block;
+  }
+  .form-choose-btn > div > p{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .pppp  > p{
+    margin-top: 15px;
+  }
+  .form-choose-btn > div > h3{
+    font-size: 16px;
+  }
+  .form-choose-btn > div > h4{
+    font-size: 30px;
+    padding: 0 9px;
+  }
+
+  .checkbox-div{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .checkbox-div div{
+    display: block;
+    width: 100%;
+  }
+  .checkbox-div > div > p{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .checkbox-div > div > section,  input{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .checkbox-div > div > section > input{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #country{
+    width: 80%;
+  }
+  
+}
+
+@media screen and (max-width: 472px){
+
+  .app-form-container > form{
+    margin-top: 70px;
+  }
+  
+  .form-choose-btn{
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 0;
+  }
+  .form-choose-btn > div{
+    width: 100%;
+    display: block;
+  }
+  .form-choose-btn > div > p{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .pppp  > p{
+    margin-top: 15px;
+  }
+  .form-choose-btn > div > h3{
+    font-size: 16px;
+  }
+  .form-choose-btn > div > h4{
+    font-size: 30px;
+    padding: 0 9px;
+  }
+
+  .checkbox-div{
+    width: 90%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .checkbox-div div{
+    display: block;
+    width: 100%;
+  }
+  .checkbox-div > div > p{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 22px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .checkbox-div > div > section,  input{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .checkbox-div > div > section > input{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #country{
+    width: 100%;
+  }
+  .main-app-service-form > div > input, select, textarea{ 
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 5px rgb(85, 85, 85);
+    outline: none;
+    border-radius: 6px;
+    width: 100%;
+  }
+  .textarea-div{ 
+    width: 90%;
+    text-align: left;
+    margin: 0;
+    position: relative;
+  }
+  .textarea-div > p{ 
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .textarea-div > textarea{ 
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    position: relative;
+  }
+  .app-form-container > form{
+  padding: 10px;
+}
+
+#phone{
+  font-size: 18px;
+  padding: 10px;
+  width: 10px;
+}
+#myphone{
+  width: 60%;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.app-form-intro-div > h1{
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.checkbox-div{
+  margin-left: 0;
+}
+
+.checkbox-div  div  p{
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  width: 90%;
+  padding-bottom: 10px;
+}
+.oooo{
+  padding-top: 20px;
+}
+.checkbox-div > div > section > input{
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+.main-app-service-form > div label{ 
+  font-size: 18px;
+}
+.main-app-service-form > h2{
+  font-size: 25px;
+}
+.main-app-service-form > h3{
+  font-size: 22px;
+}
+section{
+  margin: 0;
+  width: 90%;
+  padding: 0;
+}
+}
+
+@media screen and (max-width: 322px){
+  .checkbox-div > div > section > input{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  .main-app-service-form > div label{ 
+    font-size: 14px;
+  }
+  .checkbox-div  div  p{
+    font-size: 16px;
+    width: 100%;
+  }
+  .checkbox-div{
+    margin-left: 0;
+  }
+  .main-app-service-form{
+    transition: all 0.6s ease-in-out;
+    animation-name: formpage;
+    animation-duration: 4s;
+  }
+}
+
+
+@keyframes formpage {
+  from {margin-top: 15%;}
+}
+
+@keyframes logofile {
+  0% {opacity: 0;}
+  10% {opacity: 0.10;}
+  20% {opacity: 0.20;}
+  30% {opacity: 0.30;}
+  40% {opacity: 0.40;}
+  50% {opacity: 0.50;}
+  60% {opacity: 0.60;}
+  70% {opacity: 0.70;}
+  80% {opacity: 0.80;}
+  90% {opacity: 0.90;}
+  100% {opacity: 1;}
+}
+
+
+
+
+
+
+/*App course portal*/
+
+
+.main-app-course-form{
+  width: 100%;
+  text-align: center;
+  display: none;
+  transition: all 0.6s ease-in-out;
+  animation-name: formpage;
+  animation-duration: 4s;
+}
+.main-app-course-form > h2{
+  font-size: 40px;
+}
+.main-app-course-form > .p-icon{
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.main-app-course-form > div{
+  display: inline-block;
+  margin: 30px 20px;
+}
+.main-app-course-form > div > input, select, textarea{ 
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 0 5px rgb(85, 85, 85);
+  outline: none;
+  border-radius: 6px;
+}
+.main-app-course-form > div label{ 
+  font-size: 20px;
+  margin-right: 10px;
+}
+.textarea-div{ 
+  width: 95%;
+  text-align: center;
+  margin: 0;
+}
+.textarea-div > p{ 
+  font-size: 18px;
+  width: 70%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.textarea-div > textarea{ 
+  width: 70%;
+}
+.main-app-course-form h3{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+#phone{
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 0 5px rgb(85, 85, 85);
+  outline: none;
+  border-radius: 6px;
+  width: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.chooseprogram-div{
+  width: 95%;
+  background-color: rgb(112, 14, 99);
+  padding: 10px;
+  
+}
+.chooseprogram-div > p{
+  padding-bottom: 10px;
+  color: white;
+}
+.experience, .ourwebsite{
+  background-color: aqua;
+  width: fit-content;
+  padding: 10px;
+  display: none;
+  transition: all 0.6s ease-in-out;
+  animation-name: experience;
+  animation-duration: 2s;
+}
+.experience{
+  transition: all 0.6s ease-in-out;
+  animation-name: experience;
+  animation-duration: 2s;
+  position: absolute;
+}
+.experience p{
+  padding-bottom: 10px;
+}
+
+.acceptance{
+  background-color: aqua;
+  width: fit-content;
+  padding: 10px;
+  display: none;
+  transition: all 0.6s ease-in-out;
+  animation-name: acceptance;
+  animation-duration: 2s;
+}
+.acceptance span{
+  box-shadow: 0 0 2px;
+  padding: 2px 4px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+}
+.acceptance span:hover{
+  background-color: black;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+#csphone{
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 0 5px rgb(85, 85, 85);
+  outline: none;
+  border-radius: 6px;
+  width: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.send-btn{
+  padding: 3px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: rgb(112, 14, 99);
+  color: white;
+  border: none;
+  transition: 0.4s;
+  }
+  .send-btn:hover{
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+#myphone2{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 70%;
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 0 5px rgb(85, 85, 85);
+  outline: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+
+
+
+
+@media screen and (max-width: 789px){
+  .app-form-container > form{
+    padding-top: 120px;
+  }
+
+  .main-app-course-form{
+    transition: all 0.6s ease-in-out;
+    animation-name: formpage;
+    animation-duration: 4s;
+  }
+
+  .app-form-intro-div > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .app-form-intro-div > p{
+   font-size: 18px;
+   width: 90%;
+   text-align: left;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .form-choose-btn{
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 0;
+  }
+  .form-choose-btn > div{
+    width: 45%;
+    display: inline-block;
+  }
+  .form-choose-btn > div > p{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .form-choose-btn > div > h3{
+    font-size: 16px;
+  }
+  .form-choose-btn > div > h4{
+    font-size: 30px;
+    padding: 0 9px;
+  }
+  
+  .main-app-course-form{
+    width: 100%;
+    text-align: center;
+  }
+  .main-app-course-form > h2{
+    font-size: 30px;
+  }
+  .main-app-service-form > .p-icon{
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  .main-app-course-form > div{
+    display: block;
+    margin: 30px 20px;
+  }
+  .main-app-course-form > div > input, select, textarea{ 
+    font-size: 18px;
+    padding: 6px;
+    border: none;
+    box-shadow: 0 0 5px rgb(85, 85, 85);
+    outline: none;
+    border-radius: 6px;
+  }
+  .main-app-course-form > div label{ 
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .textarea-div{ 
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .textarea-div > p{ 
+    font-size: 18px;
+    width: 70%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  .textarea-div > textarea{ 
+    width: 70%;
+  }
+  .main-app-course-form h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .checkbox-div{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .checkbox-div div{
+    display: inline-block;
+    width: 45%;
+  }
+  .checkbox-div > div > p{
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .checkbox-div > div > section,  input{
+    text-align: left;
+  }
+  .checkbox-div > div > section > input{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+  #csphone{
+    font-size: 18px;
+    padding: 6px;
+    border: none;
+    box-shadow: 0 0 5px rgb(85, 85, 85);
+    outline: none;
+    border-radius: 6px;
+    width: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #myphone2{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 35%;
+  }
+  #logofile{
+    width: fit-content;
+    background-color: aqua;
+    padding: 10px;
+    display: none;
+  }
+  .chooseprogram-div{
+    width: fit-content;
+    padding: 10px;
+  }
+  .chooseprogram-div > p{
+    padding-top: 10px;
+  }
+  .acceptance{
+    width: fit-content;
+    padding: 10px;
+  }
+  .experience, .ourwebsite{
+    width: fit-content;
+    padding: 10px;
+  }
+  .app-website-address input{
+    font-size: 18px;
+    padding: 6px;
+    border: none;
+    box-shadow: 0 0 5px rgb(85, 85, 85);
+    outline: none;
+    border-radius: 6px;
+  }
+  .main-app-course-form section{
+    width: 100%;
+    text-align: left;
+  }
+  .experience{
+    position: relative;
+  }
+  .acceptance{
+    position: relative;
+  }
+  
+}
+
+@media screen and (max-width: 742px){
+
+  .app-form-container{
+    margin: 0;
+    padding-top: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  
+  .form-choose-btn{
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 0;
+  }
+  .form-choose-btn > div{
+    width: 100%;
+    display: block;
+  }
+  .form-choose-btn > div > p{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .pppp  > p{
+    margin-top: 15px;
+  }
+  .form-choose-btn > div > h3{
+    font-size: 16px;
+  }
+  .form-choose-btn > div > h4{
+    font-size: 30px;
+    padding: 0 9px;
+  }
+
+  .checkbox-div{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .checkbox-div div{
+    display: block;
+    width: 100%;
+  }
+  .checkbox-div > div > p{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .checkbox-div > div > section,  input{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .checkbox-div > div > section > input{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #country{
+    width: 80%;
+  }
+  
+}
+
+@media screen and (max-width: 472px){
+
+  .app-form-container > form{
+    margin-top: 70px;
+  }
+  
+  .form-choose-btn{
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 0;
+  }
+  .form-choose-btn > div{
+    width: 100%;
+    display: block;
+  }
+  .form-choose-btn > div > p{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .pppp  > p{
+    margin-top: 15px;
+  }
+  .form-choose-btn > div > h3{
+    font-size: 16px;
+  }
+  .form-choose-btn > div > h4{
+    font-size: 30px;
+    padding: 0 9px;
+  }
+
+  .checkbox-div{
+    width: 90%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .checkbox-div div{
+    display: block;
+    width: 100%;
+  }
+  .checkbox-div > div > p{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 22px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .checkbox-div > div > section,  input{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .checkbox-div > div > section > input{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #country{
+    width: 100%;
+  }
+  .main-app-course-form > div > input, select, textarea{ 
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 5px rgb(85, 85, 85);
+    outline: none;
+    border-radius: 6px;
+    width: 100%;
+  }
+  .textarea-div{ 
+    width: 90%;
+    text-align: left;
+    margin: 0;
+    position: relative;
+  }
+  .textarea-div > p{ 
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .textarea-div > textarea{ 
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    position: relative;
+  }
+  .app-form-container > form{
+  padding: 10px;
+}
+
+#csphone{
+  font-size: 18px;
+  padding: 10px;
+  width: 10px;
+}
+#myphone2{
+  width: 60%;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.app-form-intro-div > h1{
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.checkbox-div{
+  margin-left: 0;
+}
+
+.checkbox-div  div  p{
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  width: 90%;
+  padding-bottom: 10px;
+}
+.oooo{
+  padding-top: 20px;
+}
+.checkbox-div > div > section > input{
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+.main-app-course-form > div label{ 
+  font-size: 18px;
+}
+.main-app-course-form > h2{
+  font-size: 25px;
+}
+.main-app-course-form > h3{
+  font-size: 22px;
+}
+section{
+  margin: 0;
+  width: 90%;
+  padding: 0;
+}
+}
+
+@media screen and (max-width: 322px){
+  .checkbox-div > div > section > input{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  .main-app-course-form > div label{ 
+    font-size: 14px;
+  }
+  .checkbox-div  div  p{
+    font-size: 16px;
+    width: 100%;
+  }
+  .checkbox-div{
+    margin-left: 0;
+  }
+  .main-app-course-form{
+    transition: all 0.6s ease-in-out;
+    animation-name: formpage;
+    animation-duration: 4s;
+  }
+}
+
+
+
+@keyframes formpage {
+  from {margin-top: 15%;}
+}
+@keyframes experience {
+  0% {opacity: 0;}
+  10% {opacity: 0.10;}
+  20% {opacity: 0.20;}
+  30% {opacity: 0.30;}
+  40% {opacity: 0.40;}
+  50% {opacity: 0.50;}
+  60% {opacity: 0.60;}
+  70% {opacity: 0.70;}
+  80% {opacity: 0.80;}
+  90% {opacity: 0.90;}
+  100% {opacity: 1;}
+}
+@keyframes acceptance {
+  0% {opacity: 0;}
+  10% {opacity: 0.10;}
+  20% {opacity: 0.20;}
+  30% {opacity: 0.30;}
+  40% {opacity: 0.40;}
+  50% {opacity: 0.50;}
+  60% {opacity: 0.60;}
+  70% {opacity: 0.70;}
+  80% {opacity: 0.80;}
+  90% {opacity: 0.90;}
+  100% {opacity: 1;}
+}
